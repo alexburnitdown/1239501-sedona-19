@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+
+<body>
+  <header class="page-header">
+    <a href="" class="page-header__logo">
+      <img src="https://via.placeholder.com/150x150" class="page-header__logo-image" width="102" height="83" alt="Логотип город Седона">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item"><a href="#">Главная</a></li>
+        <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
+        <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
+        <li class="site-list__item"><a href="#">HTML Academy</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <p class="page-main__picture">
+      <img class="page-main__image" src="https://via.placeholder.com/150x150" width="320" height="260" alt="">
+    </p>
+    <h1 class="page-main__title">Оставьте свой отзыв
+    </h1>
+    <p class="page-main__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    <form class="page-main__form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="user">
+        <legend class="user__title">Представьтесь:</legend>
+        <label for="user__name">Имя:</label>
+        <input class="user__name" type="text" id="user__name" required>
+        <label for="user__family-name">Фамилия:</label>
+        <input class="user__family-name" type="text" id="user__family-name" required>
+        <label for="user__father-name">Отчество:</label>
+        <input class="user__father-name" type="text" id="user__father-name">
+      </fieldset>
+      <fieldset class="contacts">
+        <legend class="contacts__title">Контактная информация:</legend>
+        <label for="contacts__phone"></label>
+        <input class="contacts__phone" type="text" id="contacts__phone">
+        <label for="contacts__email"></label>
+        <input class="contacts__email" type="text" id="contacts__email">
+      </fieldset>
+      <fieldset class="review">
+        <legend class="review__title">Ваше общее впечатление:</legend>
+        <label for="positive">Скорее положительное</label>
+        <input class="review__mark" type="radio" name="review__mark" id="positive">
+        <label for="negative">Скорее отрицательное</label>
+        <input class="review__mark" type="radio" name="review__mark" id="negative">
+        <label for="no-answer">Затрудняюсь ответить</label>
+        <input class="review__mark" type="radio" name="review__mark" id="no-answer">
+      </fieldset>
+      <fieldset class="places">
+        <legend class="places__title">Посещенные достопримечательности:</legend>
+        <label for="bridge">Мост Дьявола</label>
+        <input class="places__place" type="text" name="bridge" id="bridge">
+        <label for="mountain">Гора-Колокол</label>
+        <input class="places__place" type="text" name="mountain" id="mountain">
+        <label for="park">Слайд-Парк</label>
+        <input class="places__place" type="text" name="park" id="park">
+        <label for="rocks">Красные скалы</label>
+        <input class="places__place" type="text" name="rocks" id="rocks">
+      </fieldset>
+      <fieldset class="emotions">
+        <legend class="emotions__title">Опишите свои эмоции:</legend>
+        <textarea name="emotions__text" name="emotions__text" id="emotions__text" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+      </fieldset>
+      <button class="form__button button" type="submit">Отправить отзыв</button>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <p>#Visitsedona</p>
+    <ul class="page-footer__social socials">
+      <li class="socials__item--twitter" href="#" aria-label="Твиттер"></li>
+      <li class="socials__item--facebook" href="#" aria-label="Фейсбук"></li>
+      <li class="socials__item--youtube" href="#" aria-label="Инстаграм"></li>
+    </ul>
+    <p class="page-footer__copyright">Разработано</p>
+  </footer>
+
+</body>
+
+</html>
