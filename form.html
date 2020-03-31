@@ -10,7 +10,7 @@
 <body>
   <header class="page-header">
     <a href="" class="page-header__logo">
-      <img src="https://via.placeholder.com/150x150" class="page-header__logo-image" width="102" height="83" alt="Логотип город Седона">
+      <img src="https://via.placeholder.com/102x83" class="page-header__logo-image" width="102" height="83" alt="Логотип город Седона">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -23,30 +23,28 @@
     </nav>
   </header>
   <main>
-    <p class="page-main__picture">
-      <img class="page-main__image" src="https://via.placeholder.com/150x150" width="320" height="260" alt="">
-    </p>
+    <p class="page-main__picture"></p>
     <h1 class="page-main__title">Оставьте свой отзыв
     </h1>
     <p class="page-main__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-    <form class="page-main__form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="user">
+    <form class="form-contacts" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="form-contacts__user user">
         <legend class="user__title">Представьтесь:</legend>
-        <label for="user__name">Имя:</label>
-        <input class="user__name" type="text" id="user__name" required>
-        <label for="user__family-name">Фамилия:</label>
-        <input class="user__family-name" type="text" id="user__family-name" required>
-        <label for="user__father-name">Отчество:</label>
-        <input class="user__father-name" type="text" id="user__father-name">
+        <label for="name">Имя:</label>
+        <input class="user__name" type="text" id="name" required>
+        <label for="family-name">Фамилия:</label>
+        <input class="user__family-name" type="text" id="family-name" required>
+        <label for="father-name">Отчество:</label>
+        <input class="user__father-name" type="text" id="father-name">
       </fieldset>
-      <fieldset class="contacts">
+      <fieldset class="form-contacts__contacts contacts">
         <legend class="contacts__title">Контактная информация:</legend>
-        <label for="contacts__phone"></label>
-        <input class="contacts__phone" type="text" id="contacts__phone">
-        <label for="contacts__email"></label>
-        <input class="contacts__email" type="text" id="contacts__email">
+        <label for="phone"></label>
+        <input class="contacts__phone" type="text" id="phone">
+        <label for="email"></label>
+        <input class="contacts__email" type="text" id="email">
       </fieldset>
-      <fieldset class="review">
+      <fieldset class="form-contacts__review review">
         <legend class="review__title">Ваше общее впечатление:</legend>
         <label for="positive">Скорее положительное</label>
         <input class="review__mark" type="radio" name="review__mark" id="positive">
@@ -55,7 +53,7 @@
         <label for="no-answer">Затрудняюсь ответить</label>
         <input class="review__mark" type="radio" name="review__mark" id="no-answer">
       </fieldset>
-      <fieldset class="places">
+      <fieldset class="form-contacts__places places">
         <legend class="places__title">Посещенные достопримечательности:</legend>
         <label for="bridge">Мост Дьявола</label>
         <input class="places__place" type="text" name="bridge" id="bridge">
@@ -66,9 +64,9 @@
         <label for="rocks">Красные скалы</label>
         <input class="places__place" type="text" name="rocks" id="rocks">
       </fieldset>
-      <fieldset class="emotions">
-        <legend class="emotions__title">Опишите свои эмоции:</legend>
-        <textarea name="emotions__text" name="emotions__text" id="emotions__text" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+      <fieldset class="form-contacts__emotions emotions">
+        <legend for="emotions">Опишите свои эмоции:</legend>
+        <textarea name="emotions__text" name="emotions__text" id="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
       <button class="form__button button" type="submit">Отправить отзыв</button>
     </form>
@@ -76,9 +74,9 @@
   <footer class="page-footer">
     <p>#Visitsedona</p>
     <ul class="page-footer__social socials">
-      <li class="socials__item--twitter" href="#" aria-label="Твиттер"></li>
-      <li class="socials__item--facebook" href="#" aria-label="Фейсбук"></li>
-      <li class="socials__item--youtube" href="#" aria-label="Инстаграм"></li>
+      <li class="socials__item--twitter"><a href="#" aria-label="Твиттер"></a></li>
+      <li class="socials__item--facebook"><a href="#" aria-label="Фейсбук"></a></li>
+      <li class="socials__item--youtube"><a href="#" aria-label="Инстаграм"></a></li>
     </ul>
     <p class="page-footer__copyright">Разработано</p>
   </footer>

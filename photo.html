@@ -10,7 +10,7 @@
 <body>
   <header class="page-header">
     <a href="" class="page-header__logo">
-      <img src="https://via.placeholder.com/150x150" class="page-header__logo-image" width="102" height="83" alt="Логотип город Седона">
+      <img src="https://via.placeholder.com/102x83" class="page-header__logo-image" width="102" height="83" alt="Логотип город Седона">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -23,50 +23,60 @@
     </nav>
   </header>
   <main class="page-main">
-    <p class="page-main__picture">
-      <img class="page-main__image" src="https://via.placeholder.com/150x150" width="320" height="260" alt="">
-    </p>
+    <p class="page-main__picture"></p>
     <h1 class="page-main__title">Фото и видео</h1>
     <p class="page-main__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
     <ul class="gallery">
       <li class="gallery__item">
-        <img class="gallery__image" src="https://via.placeholder.com/150x150" width="280" height="280" alt="">
+        <img class="gallery__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="">
         <h2 class="gallery__title">Неродные просторы</h2>
         <cite class="gallery__author">Автор фото: Борис</cite>
-        <p class="gallery__likes"></p>
+        <p class="gallery__likes">1350</p>
+        <button class="gallery__button"></button>
       </li>
       <li class="gallery__item">
-        <img class="gallery__image" src="https://via.placeholder.com/150x150" width="280" height="280" alt="">
+        <img class="gallery__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="">
         <h2 class="gallery__title">Местная растительность</h2>
         <cite class="gallery__author">Автор фото: Сергей</cite>
-        <p class="gallery__likes"></p>
+        <p class="gallery__likes">143</p>
+        <button class="gallery__button"></button>
       </li>
       <li class="gallery__item">
-        <img class="gallery__image" src="https://via.placeholder.com/150x150" width="280" height="280" alt="">
+        <img class="gallery__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="">
         <h2 class="gallery__title">Дорога на север</h2>
         <cite class="gallery__author">Автор фото: Петр</cite>
-        <p class="gallery__likes"></p>
+        <p class="gallery__likes">96</p>
+        <button class="gallery__button"></button>
       </li>
       <li class="gallery__item">
-        <img class="gallery__image" src="https://via.placeholder.com/150x150" width="280" height="280" alt="">
+        <img class="gallery__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="">
         <h2 class="gallery__title">Мост дьявола</h2>
         <cite class="gallery__author">Автор фото: Антон</cite>
-        <p class="gallery__likes"></p>
+        <p class="gallery__likes">254</p>
+        <button class="gallery__button"></button>
       </li>
     </ul>
     <section class="presentation">
       <h2 class="presentation__title">Все еще сомневаетесь?</h2>
       <p class="presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <video class="presentation__video" src="https://via.placeholder.com/150x150" width="320" height="200" controls></video>
+      <div class="presentation__picture">
+        <img class="presentation__image" src="https://via.placeholder.com/320x200" alt="Дорога в Седону" width="320" height="200">
+        <div class="presentation__range"></div>
+        <div class="presentation__controls">
+          <button class="presentation__replay"></button>
+          <button class="presentation__subtitles"></button>
+          <button class="presentation__fullscreen"></button>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="page-footer">
     <p>#Visitsedona</p>
     <ul class="page-footer__social socials">
-      <li class="socials__item--twitter" href="#" aria-label="Твиттер"></li>
-      <li class="socials__item--facebook" href="#" aria-label="Фейсбук"></li>
-      <li class="socials__item--youtube" href="#" aria-label="Инстаграм"></li>
+      <li class="socials__item--twitter"><a href="#" aria-label="Твиттер"></a></li>
+      <li class="socials__item--facebook"><a href="#" aria-label="Фейсбук"></a></li>
+      <li class="socials__item--youtube"><a href="#" aria-label="Инстаграм"></a></li>
     </ul>
     <p class="page-footer__copyright">Разработано</p>
   </footer>
