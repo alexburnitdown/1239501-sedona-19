@@ -14,13 +14,13 @@
       <img src="https://via.placeholder.com/102x83" class="page-header__logo-image" width="102" height="83" alt="Логотип город Седона">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle main-nav__list--open" type="button">Открыть меню</button>
+      <p class="main-nav__toggle-wrapper"> <button type="button" class="main-nav__toggle main-nav__list--open"></button></p>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a class="site-list__link" href="index.html">Главная</a>
+          <a class="site-list__link" href="#">Главная</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="#">Фото и видео</a>
+          <a class="site-list__link" href="photo.html">Фото и видео</a>
         </li>
         <li class="site-list__item">
           <a class="site-list__link" href="form.html">Форма отзыва</a>
@@ -37,31 +37,47 @@
     <ul class="gallery">
       <li class="gallery__item">
         <img class="gallery__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="">
+        <div class="gallery__wrapper">
         <h2 class="gallery__title">Неродные просторы</h2>
         <cite class="gallery__author">Автор фото: Борис</cite>
+        <div class="gallery__likes-wrapper">
         <p class="gallery__likes">1350</p>
         <button class="gallery__button">Поставить лайк</button>
+        </div>
+        </div>
       </li>
       <li class="gallery__item">
         <img class="gallery__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="">
+        <div class="gallery__wrapper">
         <h2 class="gallery__title">Местная растительность</h2>
         <cite class="gallery__author">Автор фото: Сергей</cite>
+        <div class="gallery__likes-wrapper">
         <p class="gallery__likes">143</p>
         <button class="gallery__button">Поставить лайк</button>
+        </div>
+        </div>
       </li>
       <li class="gallery__item">
         <img class="gallery__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="">
+        <div class="gallery__wrapper">
         <h2 class="gallery__title">Дорога на север</h2>
         <cite class="gallery__author">Автор фото: Петр</cite>
+        <div class="gallery__likes-wrapper">
         <p class="gallery__likes">96</p>
         <button class="gallery__button">Поставить лайк</button>
+        </div>
+        </div>
       </li>
       <li class="gallery__item">
         <img class="gallery__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="">
+        <div class="gallery__wrapper">
         <h2 class="gallery__title">Мост дьявола</h2>
         <cite class="gallery__author">Автор фото: Антон</cite>
+        <div class="gallery__likes-wrapper">
         <p class="gallery__likes">254</p>
         <button class="gallery__button">Поставить лайк</button>
+        </div>
+        </div>
       </li>
     </ul>
     <section class="presentation">
@@ -70,12 +86,13 @@
       <div class="presentation__picture">
         <img class="presentation__image" src="https://via.placeholder.com/320x200" alt="Дорога в Седону" width="320" height="200">
         <div class="presentation__range"></div>
+        </div>
         <div class="presentation__controls">
           <button class="presentation__replay">Повтор видео</button>
           <button class="presentation__subtitles">Субтитры</button>
           <button class="presentation__fullscreen">Полноэкранный режим</button>
         </div>
-      </div>
+
     </section>
   </main>
 
