@@ -1,13 +1,16 @@
-.main-nav__list--open {
+.main-nav__toggle {
+  .visually-hidden ();
+}
+
+.main-nav__toggle-wrapper {
+  .no-margin-padding();
+
+  display: block;
+  min-height: 55px;
+  order: 2;
   background-color: white;
 }
 
-.main-nav__list--open::before {
-  background-image: url(../img/logo-sedona-mobile.svg);
-}
-
-.main-nav__toggle {
-  min-height: 55px;
-  order: 2;
-  outline: 1px solid yellow;
+.main-nav__list {
+  order: 1;
 }
