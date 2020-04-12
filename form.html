@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="source/css/style.css">
@@ -34,49 +35,75 @@
     <p class="page-main__picture"></p>
     <h1 class="page-main__title">Оставьте свой отзыв
     </h1>
-    <p class="page-main__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    <p class="page-main__description">Помогите&nbsp;нашим&nbsp;отелям&nbsp;стать&nbsp;лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     <form class="form-contacts" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="form-contacts__fieldset">
         <legend class="form-contacts__title">Представьтесь:</legend>
+        <div class="form-contacts__wrapper">
         <label class="form-contacts__label" for="name">Имя:</label>
         <input class="form-contacts__input" type="text" id="name" required>
+        </div>
+        <div class="form-contacts__wrapper">
         <label class="form-contacts__label" for="family-name">Фамилия:</label>
         <input class="form-contacts__input" type="text" id="family-name" required>
+        </div>
+        <div class="form-contacts__wrapper">
         <label class="form-contacts__label" for="father-name">Отчество:</label>
         <input class="form-contacts__input" type="text" id="father-name">
+        </div>
       </fieldset>
       <fieldset class="form-contacts__fieldset">
         <legend class="form-contacts__title">Контактная информация:</legend>
         <label class="form-contacts__label" for="phone">Контактный телефон</label>
+        <div class="form-contacts__wrapper">
         <input class="form-contacts__input" type="text" id="phone">
+        <div class="form-contacts__icon"></div>
+        </div>
         <label class="form-contacts__label" for="email">Электронная почта</label>
+        <div class="form-contacts__wrapper">
         <input class="form-contacts__input" type="text" id="email">
+        <div class="form-contacts__icon"></div>
+        </div>
       </fieldset>
       <fieldset class="form-contacts__fieldset">
         <legend class="form-contacts__title">Ваше общее впечатление:</legend>
-        <label class="form-contacts__label" for="positive">Скорее положительное</label>
+        <div class="form-contacts__wrapper">
         <input class="form-contacts__input" type="radio" name="review__mark" id="positive">
-        <label class="form-contacts__label" for="negative">Скорее отрицательное</label>
+        <label class="form-contacts__label" for="positive">Скорее положительное</label>
+        </div>
+        <div class="form-contacts__wrapper">
         <input class="form-contacts__input" type="radio" name="review__mark" id="negative">
-        <label class="form-contacts__label" for="no-answer">Затрудняюсь ответить</label>
+        <label class="form-contacts__label" for="negative">Скорее отрицательное</label>
+        </div>
+        <div class="form-contacts__wrapper">
         <input class="form-contacts__input" type="radio" name="review__mark" id="no-answer">
+        <label class="form-contacts__label" for="no-answer">Затрудняюсь ответить</label>
+        </div>
       </fieldset>
       <fieldset class="form-contacts__fieldset">
         <legend class="form-contacts__title">Посещенные достопримечательности:</legend>
-        <label class="form-contacts__label" for="bridge">Мост Дьявола</label>
+        <div class="form-contacts__wrapper">
         <input class="form-contacts__input" type="checkbox" name="bridge" id="bridge">
-        <label class="form-contacts__label" for="mountain">Гора-Колокол</label>
+        <label class="form-contacts__label" for="bridge">Мост Дьявола</label>
+        </div>
+        <div class="form-contacts__wrapper">
         <input class="form-contacts__input" type="checkbox" name="mountain" id="mountain">
-        <label class="form-contacts__label" for="park">Слайд-Парк</label>
+        <label class="form-contacts__label" for="mountain">Гора-Колокол</label>
+        </div>
+        <div class="form-contacts__wrapper">
         <input class="form-contacts__input" type="checkbox" name="park" id="park">
-        <label class="form-contacts__label" for="rocks">Красные скалы</label>
+        <label class="form-contacts__label" for="park">Слайд-Парк</label>
+        </div>
+        <div class="form-contacts__wrapper">
         <input class="form-contacts__input" type="checkbox" name="rocks" id="rocks">
+        <label class="form-contacts__label" for="rocks">Красные скалы</label>
+        </div>
       </fieldset>
       <fieldset class="form-contacts__fieldset">
         <legend class="form-contacts__title" for="emotions">Опишите свои эмоции:</legend>
         <textarea class="form-contacts__text" name="emotions__text" id="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
-      <button class="form-contacts__button button" type="submit">Отправить отзыв</button>
+      <button class="form-contacts__button" type="submit">Отправить отзыв</button>
     </form>
   </main>
   <footer class="page-footer">

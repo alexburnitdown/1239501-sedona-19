@@ -1,18 +1,122 @@
+.form-contacts {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form-contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 20px;
+}
+
 .form-contacts__fieldset {
+  .no-margin-padding();
+  .container ();
+  padding-bottom: 25px;
+
   border: none;
 }
 
+.form-contacts__fieldset:nth-child(1) .form-contacts__input:nth-child(1)  {
+  width: 222px;
+}
+
+.form-contacts__fieldset:nth-child(2) .form-contacts__input:nth-child(1)  {
+  width: 222px;
+}
+
+.form-contacts__fieldset:nth-child(3) .form-contacts__wrapper {
+  justify-content: flex-start;
+}
+
+.form-contacts__fieldset:nth-child(3) .form-contacts__input {
+  width: 46px;
+  height: 46px;
+
+  margin-right: 27px;
+}
+
+.form-contacts__fieldset:nth-child(3) .form-contacts__label {
+  font-weight: bold;
+  text-transform: none;
+  font-size: 18px;
+  line-height: 46px;
+}
+
+.form-contacts__fieldset:nth-child(4) .form-contacts__wrapper {
+  justify-content: flex-start;
+}
+
+.form-contacts__fieldset:nth-child(4) .form-contacts__input {
+  width: 46px;
+  height: 46px;
+
+  margin-right: 29px;
+}
+
+.form-contacts__fieldset:nth-child(4) .form-contacts__label {
+  font-weight: bold;
+  text-transform: none;
+  font-size: 18px;
+  line-height: 46px;
+}
+
 .form-contacts__title {
+  max-width: 250px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
   font-weight: bold;
   font-size: 18px;
 }
 
+.form-contacts__label {
+  line-height: 58px;
+}
+
 .form-contacts__input {
+  width: 192px;
+  height: 58px;
+
   background-color: @bg-input;
   border: none;
 }
 
+.form-contacts__icon {
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+}
+
 .form-contacts__text {
+  width: 279px;
+  min-height: 160px;
+
   background-color: @bg-input;
   border: none;
+}
+
+.form-contacts__text::placeholder {
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
+.form-contacts__button {
+  .button-reset();
+  .font ();
+
+  display: block;
+  width: 280px;
+  min-height: 58px;
+  margin: 0px auto;
+  margin-bottom: 49px;
+
+  color: white;
+  background-color: @light-grey-blue;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 58px;
 }

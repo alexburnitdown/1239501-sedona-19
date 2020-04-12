@@ -4,15 +4,21 @@
 
 .booking__title {
   .no-margin-padding();
+  .container ();
+
+  max-width: 265px;
+
+  padding-bottom: 27px;
 
   font-size: 21px;
 }
 
 .booking__description {
   .no-margin-padding();
+  .container ();
 
-  padding-left: 30px;
-  padding-right: 30px;
+  max-width: 265px;
+
   padding-bottom: 40px;
 }
 
@@ -24,11 +30,14 @@
   .font ();
 
   display: block;
-  width: 280px;
+  max-width: 285px;
   min-height: 58px;
   margin: 0px auto;
   margin-bottom: 49px;
 
+  border: none;
+  outline: none;
+  box-shadow: none;
   color: white;
   background-color: @light-grey-blue;
   text-decoration: none;

@@ -14,3 +14,25 @@
 .main-nav__list {
   order: 1;
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    min-width: 768px;
+    margin: 0;
+  }
+
+  .main-nav__toggle-wrapper {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+}

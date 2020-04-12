@@ -1,5 +1,8 @@
 .presentation__title {
   .no-margin-padding();
+  .container ();
+
+  max-width: 236px;
 
   padding-top: 39px;
   padding-bottom: 19px;
@@ -7,16 +10,29 @@
   font-size: 18px;
 }
 
+.presentation__description {
+  .no-margin-padding();
+  .container ();
+
+  max-width: 236px;
+
+  padding-bottom: 40px;
+
+  font-size: 14px;
+}
+
 .presentation__picture {
   .no-margin-padding();
 
   width: 320px;
   height: 200px;
+
+  margin: 0 auto;
 }
 
 .presentation__image {
   position: relative;
-  outline: 1px solid yellow;
+  margin: 0 auto;
 }
 
 .presentation__range {
@@ -40,15 +56,4 @@
 
   margin: 0 auto;
   background-color: lightgrey;
-
-}
-
-.presentation__description {
-  .no-margin-padding();
-
-  padding-left: 43px;
-  padding-right: 41px;
-  padding-bottom: 40px;
-
-  font-size: 14px;
 }
