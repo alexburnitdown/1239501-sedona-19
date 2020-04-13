@@ -22,10 +22,6 @@
   padding-bottom: 40px;
 }
 
-.booking__map-image {
-  font-size: 21px;
-}
-
 .booking__button {
   .font ();
 
@@ -44,4 +40,23 @@
   font-weight: bold;
   font-size: 21px;
   line-height: 58px;
+}
+
+@media (min-width: @tablet-width) {
+  .booking__title {
+    font-size: 30px;
+  }
+
+  .booking__description {
+  max-width: 440px;
+  }
+
+  .booking__button{
+    max-width: 458px;
+  }
+
+  .booking__map-image {
+    width: 768px;
+    height: 350px;
+  }
 }
