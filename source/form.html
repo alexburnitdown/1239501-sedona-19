@@ -16,19 +16,12 @@
     </a>
     <nav class="main-nav">
       <p class="main-nav__toggle-wrapper"> <button type="button" class="main-nav__toggle main-nav__list--open"></button></p>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="photo.html">Фото и видео</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="form.html">Форма отзыва</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">HTML Academy</a></li>
-      </ul>
+      <div class="main-nav__list site-list">
+        <a class="site-list__link" href="index.html">Главная</a>
+        <a class="site-list__link" href="photo.html">Фото и видео</a>
+        <a class="site-list__link" href="#">Форма отзыва</a>
+        <a class="site-list__link" href="#">HTML Academy</a></li>
+      </div>
     </nav>
   </header>
   <main class="page-main">
@@ -41,7 +34,7 @@
         <legend class="form-contacts__title">Представьтесь:</legend>
         <div class="form-contacts__wrapper">
         <label class="form-contacts__label" for="name">Имя:</label>
-        <input class="form-contacts__input" type="text" id="name" required>
+        <input class="form-contacts__input form-contacts__input--name" type="text" id="name" required>
         </div>
         <div class="form-contacts__wrapper">
         <label class="form-contacts__label" for="family-name">Фамилия:</label>
