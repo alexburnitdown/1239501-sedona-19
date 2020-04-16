@@ -104,7 +104,7 @@
   font-weight: bold;
   text-transform: none;
   font-size: 18px;
-  line-height: 46px;
+  line-height: 58px;
 }
 
 .form-contacts__fieldset:nth-child(4) .form-contacts__wrapper {
@@ -122,5 +122,97 @@
   font-weight: bold;
   text-transform: none;
   font-size: 18px;
-  line-height: 46px;
+  line-height: 58px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-contacts{
+    .container ();
+
+    outline: 1px solid yellow;
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 648px;
+    padding: 0px;
+    padding-top: 29px;
+  }
+  
+  .form-contacts__title {
+    max-width: 278px;
+    font-size: 21px;
+    outline: 1px solid yellow;
+  }
+
+  .form-contacts__wrapper {
+    .no-margin-padding();
+  }
+
+  .form-contacts__fieldset:nth-child(3) {
+    order: 0;
+  }
+
+  .form-contacts__fieldset:nth-child(1) {
+    order: 1;
+  }
+
+  .form-contacts__fieldset:nth-child(1) .form-contacts__wrapper {
+    margin-left: 88px;
+  }
+  
+  .form-contacts__fieldset:nth-child(1) .form-contacts__title {
+    text-align: left;
+    margin-left: 88px;
+  }
+
+  .form-contacts__fieldset:nth-child(2) {
+    display: block;
+    width: 648px;
+    order: 2;
+  }
+  
+  .form-contacts__fieldset:nth-child(2) .form-contacts__wrapper {
+    width: 648px;
+    height: 58px;
+    outline: 1px solid red;
+  }
+
+  .form-contacts__fieldset:nth-child(2) .form-contacts__input {
+    width: 590px;
+  }
+  
+  .form-contacts__fieldset:nth-child(4) .form-contacts__wrapper {
+    width: 205px;
+    outline: 1px solid red;
+  }
+
+  .form-contacts__fieldset:nth-child(4) .form-contacts__wrapper:nth-child(odd) {
+    margin-right: 32px;
+  }
+
+  .form-contacts__container {
+    .container ();
+    
+    display: flex;
+    flex-wrap: wrap;
+    width: 443px;
+    outline: 1px solid red;
+  }
+
+  .form-contacts__fieldset:nth-child(4) {
+    display: block;
+    width: 648px;
+    order: 3;
+    outline: 1px solid BLUE;
+  }
+
+  .form-contacts__fieldset:nth-child(5) {
+    display: block;
+    width: 648px;
+    order: 4;
+  }
+
+  .form-contacts__button {
+    order: 5;
+  }
 }
