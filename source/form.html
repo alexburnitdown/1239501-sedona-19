@@ -49,12 +49,12 @@
         <legend class="form-contacts__title">Контактная информация:</legend>
         <label class="form-contacts__label" for="phone">Контактный телефон</label>
         <div class="form-contacts__wrapper">
-        <input class="form-contacts__input" type="text" id="phone">
+        <input class="form-contacts__input" type="text" id="phone" placeholder="Введите телефон">
         <div class="form-contacts__icon"></div>
         </div>
         <label class="form-contacts__label" for="email">Электронная почта</label>
         <div class="form-contacts__wrapper">
-        <input class="form-contacts__input" type="text" id="email">
+        <input class="form-contacts__input" type="text" id="email" placeholder="Введите e-mail">
         <div class="form-contacts__icon"></div>
         </div>
       </fieldset>
@@ -98,7 +98,10 @@
         <legend class="form-contacts__title" for="emotions">Опишите свои эмоции:</legend>
         <textarea class="form-contacts__text" name="emotions__text" id="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
+      <div class="form-contacts__wrapper">
       <button class="form-contacts__button" type="submit">Отправить отзыв</button>
+      <p class="form-contacts__remark">*-Обязательные поля</p>
+      </div>
     </form>
   </main>
   <footer class="page-footer">
