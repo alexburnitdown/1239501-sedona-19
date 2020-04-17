@@ -125,6 +125,16 @@
   line-height: 58px;
 }
 
+.form-contacts__remark {
+  display: none;
+}
+
+.form-contacts__fieldset:nth-child(2) .form-contacts__input::placeholder {
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
 @media (min-width: @tablet-width) {
   .form-contacts{
     .container ();
@@ -273,6 +283,10 @@
 
   .form-contacts__button {
     .no-margin-padding();
+  }
+
+  .form-contacts__remark {
+    display: block;
   }
 
 }
