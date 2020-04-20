@@ -1,10 +1,9 @@
-.site-list {
-  .no-margin-padding();
-}
-
 .site-list__link {
+  .container();
+
   display: block;
   min-height: 55px;
+  width: 320PX;
   box-shadow: 0px 1px 0px 0px rgba(1, 1, 1, 0.2);
   box-sizing: border-box;
 
@@ -17,7 +16,6 @@
 }
 
 @media (min-width: @tablet-width) {
-
   .site-list__link {
     display: block;
     width: 153px;
@@ -31,6 +29,22 @@
 
   .site-list__link:nth-child(2) {
     margin-right: 156px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    width: 1200px;
+  }
+
+  .site-list__link {
+    display: block;
+    width: 239px;
+    outline: 1px solid yellow;
+  }
+
+  .site-list__link:nth-child(2) {
+    margin-right: 244px;
   }
 
 }

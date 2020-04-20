@@ -6,8 +6,22 @@
   min-height: 389px;
 
   background-color: lightgrey;
-  background-image: url(../source/img/bg-back-mobile.jpg);
+  background-image: url(../img/bg-back-mobile.jpg);
   background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+.page-main__picture--form {
+  .no-margin-padding();
+  .container ();
+
+  max-width: 320px;
+  height: 162px;
+
+  background-color: lightgrey;
+  background-image: url(../img/bg-back-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
 }
 
 .page-main__title {
@@ -16,7 +30,7 @@
 
   max-width: 255px;
   margin-top: 43px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 
   font-size: 18px;
 }
@@ -26,7 +40,7 @@
   .container ();
 
   max-width: 255px;
-  margin-bottom: 29px;
+  margin-bottom: 20px;
 
   font-size: 14px;
 }
@@ -54,5 +68,12 @@
     margin-bottom: 55px;
 
     color: #333333;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__picture {
+    max-width: 1200px;
+    min-height: 518px;
   }
 }

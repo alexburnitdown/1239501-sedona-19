@@ -7,6 +7,32 @@
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link href="pixel-glass/styles.css" rel="stylesheet">
+  <script src="pixel-glass/script.js"></script>
+  <style>
+    HTML {
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-image: url( 'img/preview/sedona-form-mobile.png' );
+  }
+
+  @media (min-width: 768px) {
+    HTML {
+      background-image: url( 'img/preview/sedona-form-tablet.png' );
+    }
+  }
+
+  @media (min-width: 1200px) {
+    HTML {
+      background-image: url( 'img/preview/sedona-form-desktop.png' );
+    }
+  }
+
+  /* Делаем слой с разметкой полупрозрачным */
+  BODY {
+    opacity: .5;
+  }
+  </style>
 </head>
 
 <body>
@@ -15,17 +41,17 @@
       <img src="https://via.placeholder.com/102x83" class="page-header__logo-image" width="102" height="83" alt="Логотип город Седона">
     </a>
     <nav class="main-nav">
-      <p class="main-nav__toggle-wrapper"> <button type="button" class="main-nav__toggle main-nav__list--open"></button></p>
       <div class="main-nav__list site-list">
         <a class="site-list__link" href="index.html">Главная</a>
         <a class="site-list__link" href="photo.html">Фото и видео</a>
         <a class="site-list__link" href="#">Форма отзыва</a>
         <a class="site-list__link" href="#">HTML Academy</a></li>
       </div>
+      <p class="main-nav__toggle-wrapper"> <button type="button" class="main-nav__toggle main-nav__list--open"></button></p>
     </nav>
   </header>
   <main class="page-main">
-    <p class="page-main__picture"></p>
+    <p class="page-main__picture--form"></p>
     <h1 class="page-main__title">Оставьте свой отзыв
     </h1>
     <p class="page-main__description">Помогите&nbsp;нашим&nbsp;отелям&nbsp;стать&nbsp;лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
@@ -34,15 +60,15 @@
         <legend class="form-contacts__title">Представьтесь:</legend>
         <div class="form-contacts__wrapper">
         <label class="form-contacts__label" for="name">Имя:</label>
-        <input class="form-contacts__input form-contacts__input--name" type="text" id="name" required>
+        <input class="form-contacts__input form-contacts__input--name" type="text" id="name" placeholder="Петр" required>
         </div>
         <div class="form-contacts__wrapper">
         <label class="form-contacts__label" for="family-name">Фамилия:</label>
-        <input class="form-contacts__input" type="text" id="family-name" required>
+        <input class="form-contacts__input" type="text" id="family-name"  placeholder="Иванов" required>
         </div>
         <div class="form-contacts__wrapper">
         <label class="form-contacts__label" for="father-name">Отчество:</label>
-        <input class="form-contacts__input" type="text" id="father-name">
+        <input class="form-contacts__input" type="text" id="father-name" placeholder="Александрович">
         </div>
       </fieldset>
       <fieldset class="form-contacts__fieldset">

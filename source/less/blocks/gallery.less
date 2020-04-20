@@ -40,10 +40,14 @@
   .visually-hidden ();
 }
 
+.gallery__image {
+  vertical-align:bottom
+}
+
 @media (min-width: @tablet-width) {
   .gallery {
     .container ();
-    
+
     width: 648px;
 
     text-align: left;
@@ -81,11 +85,10 @@
   .gallery__likes-wrapper {
     display: flex;
   }
- 
+
   .gallery__image {
     width: 324px;
     height: 267px;
-    vertical-align:bottom
   }
 
   .gallery>.gallery__item {
@@ -112,6 +115,6 @@
   .gallery__flex {
       display: flex;
   }
-  
+
 
 }
