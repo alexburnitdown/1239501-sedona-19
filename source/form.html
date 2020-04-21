@@ -52,7 +52,7 @@
   </header>
   <main class="page-main">
     <p class="page-main__picture--form"></p>
-    <h1 class="page-main__title">Оставьте свой отзыв
+    <h1 class="page-main__title--form">Оставьте свой отзыв
     </h1>
     <p class="page-main__description">Помогите&nbsp;нашим&nbsp;отелям&nbsp;стать&nbsp;лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     <form class="form-contacts" action="https://echo.htmlacademy.ru" method="post">
@@ -73,15 +73,17 @@
       </fieldset>
       <fieldset class="form-contacts__fieldset">
         <legend class="form-contacts__title">Контактная информация:</legend>
-        <label class="form-contacts__label" for="phone">Контактный телефон</label>
+        <div class="form-contacts__wrapper-outside">
         <div class="form-contacts__wrapper">
+        <label class="form-contacts__label" for="phone">Контактный телефон</label>
         <input class="form-contacts__input" type="text" id="phone" placeholder="Введите телефон">
         <div class="form-contacts__icon"></div>
         </div>
-        <label class="form-contacts__label" for="email">Электронная почта</label>
         <div class="form-contacts__wrapper">
+        <label class="form-contacts__label" for="email">Электронная почта</label>
         <input class="form-contacts__input" type="text" id="email" placeholder="Введите e-mail">
         <div class="form-contacts__icon"></div>
+        </div>
         </div>
       </fieldset>
       <fieldset class="form-contacts__fieldset">
