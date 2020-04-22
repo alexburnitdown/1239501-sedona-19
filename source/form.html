@@ -51,10 +51,10 @@
     </nav>
   </header>
   <main class="page-main">
-    <p class="page-main__picture--form"></p>
-    <h1 class="page-main__title--form">Оставьте свой отзыв
+    <p class="page-main__picture page-main__picture--form"></p>
+    <h1 class="page-main__title page-main__title--form">Оставьте свой отзыв
     </h1>
-    <p class="page-main__description">Помогите&nbsp;нашим&nbsp;отелям&nbsp;стать&nbsp;лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    <p class="page-main__description page-main__description--form">Помогите&nbsp;нашим&nbsp;отелям&nbsp;стать&nbsp;лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     <form class="form-contacts" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="form-contacts__fieldset">
         <legend class="form-contacts__title">Представьтесь:</legend>
@@ -75,7 +75,7 @@
         <legend class="form-contacts__title">Контактная информация:</legend>
         <div class="form-contacts__wrapper-outside">
         <div class="form-contacts__wrapper">
-        <label class="form-contacts__label" for="phone">Контактный телефон</label>
+        <label class="form-contacts__label" for="phone"><p class="form-contacts__label-phone">Контактный</p> телефон</label>
         <input class="form-contacts__input" type="text" id="phone" placeholder="Введите телефон">
         <div class="form-contacts__icon"></div>
         </div>
@@ -103,7 +103,7 @@
       </fieldset>
       <fieldset class="form-contacts__fieldset">
         <legend class="form-contacts__title">Посещенные достопримечательности:</legend>
-        <div class="form-contacts__container">
+        <div class="form-contacts__wrapper-outside">
         <div class="form-contacts__wrapper">
         <input class="form-contacts__input" type="checkbox" name="bridge" id="bridge">
         <label class="form-contacts__label" for="bridge">Мост Дьявола</label>
@@ -132,7 +132,7 @@
       </div>
     </form>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--form">
     <p class="page-footer__hashtag">#Visitsedona</p>
     <ul class="page-footer__socials socials">
       <li class="socials__item socials__item--twitter"><a href="#" aria-label="Твиттер"></a></li>
