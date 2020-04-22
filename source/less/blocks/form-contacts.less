@@ -43,7 +43,7 @@
 }
 
 .form-contacts__input--name {
-  width: 222px;
+  width: 232px;
 }
 
 .form-contacts__icon {
@@ -95,8 +95,37 @@
   line-height: 58px;
 }
 
+.form-contacts__fieldset:nth-child(2) {
+  width: 320px;
+
+}
+
+.form-contacts__fieldset:nth-child(2) .form-contacts__wrapper-outside {
+  width: 280px;
+  text-align: left;
+}
+
+.form-contacts__fieldset:nth-child(2) .form-contacts__title {
+  padding-bottom: 5px;
+}
+
+.form-contacts__fieldset:nth-child(2) .form-contacts__label {
+  margin-left: 42px;
+  outline: 1px solid red;
+}
+
 .form-contacts__fieldset:nth-child(2) .form-contacts__input {
-  width: 222px;
+  width: 232px;
+  margin-left: 18px;
+
+}
+
+.form-contacts__fieldset:nth-child(2) .form-contacts__wrapper {
+  .no-margin-padding();
+  justify-content: flex-start;
+  outline: 1px solid red;
+  margin-top: -8px;
+  margin-bottom: -8px;
 }
 
 .form-contacts__fieldset:nth-child(3) .form-contacts__wrapper {
@@ -195,12 +224,10 @@
 
   .form-contacts__fieldset:nth-child(1) .form-contacts__wrapper:nth-child(3) {
     margin-top: 18px;
-    outline: 1px solid red;
   }
 
   .form-contacts__fieldset:nth-child(1) .form-contacts__wrapper:nth-child(4) {
     margin-top: 18px;
-    outline: 1px solid red;
   }
 
   .form-contacts__fieldset:nth-child(1) .form-contacts__title {
@@ -218,8 +245,8 @@
   }
 
   .form-contacts__fieldset:nth-child(2) .form-contacts__title {
-    padding-top: 75px;
-    padding-bottom: 32px;
+    padding-top: 65px;
+    padding-bottom: 0px;
     outline: 1px solid red;
   }
 
@@ -232,7 +259,11 @@
     display: block;
     max-width: 162px;
 
-    margin-left: 22px;
+    margin-left: 20px;
+    padding-top: 31px;
+    padding-bottom: 5px;
+    text-align: left;
+    line-height: 20px;
   }
 
   .form-contacts__label-phone {
@@ -241,7 +272,10 @@
 
   .form-contacts__fieldset:nth-child(2) .form-contacts__input {
     width: 590px;
-    padding-left: 23px;
+  }
+
+  .form-contacts__icon{
+    width: 58px;
   }
 
   .form-contacts__fieldset:nth-child(2) .form-contacts__input::placeholder {
@@ -250,12 +284,19 @@
     color: black;
   }
 
+  .form-contacts__fieldset:nth-child(4) .form-contacts__wrapper-outside {
+    .container ();
+    display: flex;
+    flex-wrap: wrap;
+    width: 454px;
+  }
+
   .form-contacts__fieldset:nth-child(4) .form-contacts__wrapper {
     width: 205px;
   }
 
   .form-contacts__fieldset:nth-child(4) .form-contacts__wrapper:nth-child(odd) {
-    margin-right: 32px;
+    margin-right: 44px;
   }
 
   .form-contacts__container {
@@ -279,11 +320,11 @@
     .no-margin-padding();
 
     padding-top: 58px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
   }
 
   .form-contacts__fieldset:nth-child(4) .form-contacts__wrapper:nth-child(1) {
-    margin-bottom: 42px;
+    margin-bottom: 32px;
   }
 
   .form-contacts__fieldset:nth-child(5) {
@@ -298,7 +339,7 @@
   .form-contacts__fieldset:nth-child(5) .form-contacts__title {
     .no-margin-padding();
 
-    padding-top: 78px;
+    padding-top: 65px;
     padding-bottom: 60px;
 
     font-size: 21px;
@@ -308,6 +349,8 @@
     .no-margin-padding();
 
     width: 648px;
+    min-height: 150px;
+    padding-top: 15px;
   }
 
   .form-contacts>.form-contacts__wrapper {
@@ -316,13 +359,15 @@
 
     width: 648px;
     min-height: 58px;
-    margin-top: 58px;
+    margin-top: 40px;
 
     order: 5;
   }
 
   .form-contacts__button {
     .no-margin-padding();
+
+    width: 324px;
   }
 
   .form-contacts__remark {
@@ -340,7 +385,7 @@
   }
 
   .form-contacts__title {
-    padding-bottom: 60px;
+    padding-bottom: 20px;
   }
 
   .form-contacts__fieldset:nth-child(1) {
@@ -368,23 +413,21 @@
     width: 951px;
   }
 
-  .form-contacts__fieldset:nth-child(2) .form-contacts__wrapper:nth-child(1) {
-    width: 401px;
-  }
-
-  .form-contacts__fieldset:nth-child(2) .form-contacts__wrapper:nth-child(2) {
-    width: 481px;
-    margin-left: 79px;
-  }
-
-  .form-contacts__fieldset:nth-child(2) .form-contacts__label {
-    margin: 0px;
-    margin-right: 20px;
-    text-align: left;
+  .form-contacts__fieldset:nth-child(2) .form-contacts__wrapper {
+    width: 315px;
   }
 
   .form-contacts__fieldset:nth-child(2) .form-contacts__label:nth-child(1) {
-    width: ;
+    margin-left: 0px;
+  }
+
+  .form-contacts__fieldset:nth-child(2) .form-contacts__label {
+    margin-right: 20px;
+    margin-left: 79px;
+    padding-top: 0px;
+    text-align: left;
+    line-height: 58px;
+    outline: 1px solid red;
   }
 
   .form-contacts__fieldset:nth-child(2) .form-contacts__input {
@@ -392,9 +435,10 @@
     width: 257px;
   }
 
-  .form-contacts__wrapper-outside {
+  .form-contacts__fieldset:nth-child(2) .form-contacts__wrapper-outside {
     display: flex;
     width: 951px;
+    align-items: top;
   }
 
   .form-contacts__label-phone {
@@ -402,17 +446,24 @@
   }
 
    .form-contacts__fieldset:nth-child(2) .form-contacts__title {
-    padding-top: 38px;
+    padding-top: 65px;
     padding-bottom: 77px;
   }
 
   .form-contacts__fieldset:nth-child(4) .form-contacts__title {
-    padding-top: 50px;
-    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 45px;
+  }
+
+  .form-contacts__fieldset:nth-child(4) .form-contacts__wrapper-outside {
+    display: flex;
+    width: 951px;
+    outline: 1px solid red;
   }
 
   .form-contacts__fieldset:nth-child(4) .form-contacts__wrapper {
-   margin-right: 50px;
+   margin-right: 40px;
+   outline: 1px solid red;
   }
 
   .form-contacts__fieldset:nth-child(4) .form-contacts__wrapper:nth-child(4n) {
@@ -421,7 +472,7 @@
 
   .form-contacts__fieldset:nth-child(4) .form-contacts__wrapper:nth-child(odd) {
     .no-margin-padding();
-    margin-right: 50px;
+    margin-right: 45px;
   }
 
   .form-contacts__fieldset:nth-child(5) {
@@ -440,8 +491,8 @@
   }
 
   .form-contacts__fieldset:nth-child(5) .form-contacts__title {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 65px;
+    padding-bottom: 60px;
   }
 
   .form-contacts__button {
