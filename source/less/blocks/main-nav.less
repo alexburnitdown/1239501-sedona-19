@@ -1,10 +1,28 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__close {
+  position: absolute;
+
+}
+
 .main-nav__toggle {
   .visually-hidden ();
 }
 
+.main-nav__toggle-wrapper:before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/icon-menu.svg);
+  background-repeat: no-repeat;
+}
+
 .main-nav__toggle-wrapper {
   .no-margin-padding();
-
+  position: relative;
   display: block;
   min-height: 55px;
   background-color: white;
