@@ -38,6 +38,44 @@
   color: white;
 }
 
+.features__number::before,
+.features__number::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background-color: black;
+}
+
+.features__number::before {
+  margin-top: 11px;
+  margin-left: -15px;
+}
+
+.features__number::after {
+  margin-top: 11px;
+  margin-left: 6px;
+}
+
+.features>.features__number::before {
+  margin-top: 10px;
+  margin-left: -20px;
+}
+
+.features>.features__number::after {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.features>.features__item:nth-child(1) .features__number::before,
+.features>.features__item:nth-child(2) .features__number::before,
+.features>.features__item:nth-child(3) .features__number::before,
+.features>.features__item:nth-child(1) .features__number::after,
+.features>.features__item:nth-child(2) .features__number::after,
+.features>.features__item:nth-child(3) .features__number::after {
+  background-color: white;
+}
+
 .features>.features__item:nth-child(1) .features__title-wrapper {
   min-height: 210px;
   color: white;

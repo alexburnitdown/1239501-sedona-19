@@ -6,6 +6,7 @@
 }
 
 .page-main__picture--index {
+  position: relative;
   min-height: 389px;
 
   background-color: lightgrey;
@@ -14,7 +15,22 @@
   background-position: 50% 0;
 }
 
+.page-main__picture--index::before {
+  content: "";
+  position: absolute;
+  width: 281px;
+  height: 214px;
+  top: 0;
+  left: 0%;
+
+  background-image: url(../img/text-sedona-index.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  outline: 1px solid red;
+}
+
 .page-main__picture--photo {
+  position: relative;
   height: 162px;
 
   background-color: lightgrey;
@@ -23,13 +39,42 @@
   background-position: 50% 100%;
 }
 
+.page-main__picture--photo::before {
+  content: "";
+  position: absolute;
+  width: 229px;
+  height: 39px;
+  top: 0;
+  left: 0%;
+
+  background-image: url(../img/text-sedona.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  outline: 1px solid red;
+}
+
 .page-main__picture--form {
+  position: relative;
   height: 162px;
 
   background-color: lightgrey;
   background-image: url(../img/bg-back-mobile.jpg);
   background-repeat: no-repeat;
   background-position: 50% 100%;
+}
+
+.page-main__picture--form::before {
+  content: "";
+  position: absolute;
+  width: 229px;
+  height: 39px;
+  top: 0;
+  left: 0%;
+
+  background-image: url(../img/text-sedona.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  outline: 1px solid red;
 }
 
 .page-main__title {

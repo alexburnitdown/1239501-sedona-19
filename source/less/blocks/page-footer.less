@@ -16,7 +16,21 @@
 .page-footer__copyright {
   .no-margin-padding();
 
+  position: relative;
+
   margin-right: 40px;
+}
+
+.page-footer__copyright::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 34px;
+  top: 0;
+  left: 50%;
+  margin-left: 52px;
+  background-image: url(../img/htmlacademy.svg);
+  background-repeat: no-repeat;
 }
 
 @media (min-width: @tablet-width) {
