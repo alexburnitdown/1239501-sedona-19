@@ -1,11 +1,159 @@
 .presentation__title {
   .no-margin-padding();
+  .container ();
+
+  max-width: 236px;
+
+  padding-top: 39px;
+  padding-bottom: 19px;
 
   font-size: 18px;
 }
 
 .presentation__description {
   .no-margin-padding();
+  .container ();
+
+  max-width: 236px;
+
+  padding-bottom: 40px;
 
   font-size: 14px;
+
+  color: #333333;
+}
+
+.presentation__picture {
+  .no-margin-padding();
+
+  width: 320px;
+  height: 200px;
+
+  margin: 0 auto;
+}
+
+.presentation__image {
+  position: relative;
+  margin: 0 auto;
+}
+
+.presentation__range {
+  position: absolute;
+  width: 280px;
+  height: 45px;
+
+  left: 50%;
+  margin-left: -140px;
+  margin-top: -53px;
+
+  opacity: 0.6;
+  background-color: black;
+}
+
+.presentation__controls {
+  .no-margin-padding();
+
+  width: 280px;
+  height: 66px;
+
+  margin: 0 auto;
+  background-color: lightgrey;
+}
+
+.presentation__button {
+  .button-reset();
+
+  width: 20px;
+  height: 20px;
+  outline: 1px solid red;
+}
+
+@media (min-width: @tablet-width) {
+  .presentation__title {
+    max-width: 415px;
+
+    padding-top: 68px;
+    padding-bottom: 23px;
+
+    font-size: 30px;
+  }
+
+  .presentation__description {
+    max-width: 415px;
+
+    padding-bottom: 75px;
+  }
+
+  .presentation__picture {
+    position: relative;
+    width: 648px;
+    height: 499px;
+  }
+
+  .presentation__image {
+    width: 648px;
+    height: 499px;
+  }
+
+  .presentation__range {
+    width: 648px;
+    height: 93px;
+
+    left: 0%;
+    margin-left: 0px;
+    margin-top: -101px;
+  }
+
+  .presentation__controls {
+    position: absolute;
+    width: 648px;
+
+    margin-top: -66px;
+    background-color: transparent;
+  }
+
+  .presentation__button:nth-child(1) {
+    position: absolute;
+    left: 0%;
+    margin-left: 35px;
+  }
+
+  .presentation__button:nth-child(2) {
+    position: absolute;
+    right: 0%;
+    margin-right: 155px;
+  }
+
+  .presentation__button:nth-child(3) {
+    position: absolute;
+    right: 0%;
+    margin-right: 41px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .presentation__picture {
+    width: 800px;
+  }
+
+  .presentation__image {
+    width: 800px;
+  }
+
+  .presentation__range {
+    width: 800px;
+  }
+
+  .presentation__controls {
+    width: 800px;
+  }
+
+  .presentation__title {
+    padding-top: 72px;
+    padding-bottom: 30px;
+  }
+
+  .presentation__description {
+    padding-bottom: 70px;
+  }
 }

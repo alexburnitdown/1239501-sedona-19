@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="pixel-glass/styles.css" rel="stylesheet">
+  <script src="pixel-glass/script.js"></script>
+  <style>
+    HTML {
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-image: url( 'img/preview/sedona-form-mobile.png' );
+  }
+
+  @media (min-width: 768px) {
+    HTML {
+      background-image: url( 'img/preview/sedona-form-tablet.png' );
+    }
+  }
+
+  @media (min-width: 1200px) {
+    HTML {
+      background-image: url( 'img/preview/sedona-form-desktop.png' );
+    }
+  }
+
+  /* Делаем слой с разметкой полупрозрачным */
+  BODY {
+    opacity: .5;
+  }
+  </style>
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="main-nav">
+    <a href="#" class="main-nav__logo">
+      <p class="main-nav__logo-image"></p>
+    </a>
+      <svg class="main-nav__close" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
+      <polygon fill="#ffffff" points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
+      </svg>
+      <div class="main-nav__list site-list">
+        <a class="site-list__link" href="index.html">Главная</a>
+        <a class="site-list__link" href="photo.html">Фото и видео</a>
+        <a class="site-list__link" href="#">Форма отзыва</a>
+        <a class="site-list__link" href="#">HTML Academy</a></li>
+      </div>
+      <p class="main-nav__toggle-wrapper"><button type="button" class="main-nav__toggle"></button></p>
+    </nav>
+  </header>
+  <main class="page-main">
+    <p class="page-main__picture page-main__picture--form"></p>
+    <h1 class="page-main__title page-main__title--form">Оставьте свой отзыв
+    </h1>
+    <p class="page-main__description page-main__description--form">Помогите&nbsp;нашим&nbsp;отелям&nbsp;стать&nbsp;лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    <form class="form-contacts" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="form-contacts__fieldset">
+        <legend class="form-contacts__title">Представьтесь:</legend>
+        <div class="form-contacts__wrapper">
+        <label class="form-contacts__label" for="name">Имя:</label>
+        <input class="form-contacts__input form-contacts__input--name" type="text" id="name" placeholder="Петр" required>
+        </div>
+        <div class="form-contacts__wrapper">
+        <label class="form-contacts__label" for="family-name">Фамилия:</label>
+        <input class="form-contacts__input" type="text" id="family-name"  placeholder="Иванов" required>
+        </div>
+        <div class="form-contacts__wrapper">
+        <label class="form-contacts__label" for="father-name">Отчество:</label>
+        <input class="form-contacts__input" type="text" id="father-name" placeholder="Александрович">
+        </div>
+      </fieldset>
+      <fieldset class="form-contacts__fieldset">
+        <legend class="form-contacts__title">Контактная информация:</legend>
+        <div class="form-contacts__wrapper-outside">
+        <label class="form-contacts__label" for="phone"><span class="form-contacts__label-phone">Контактный</span> телефон</label>
+        <div class="form-contacts__wrapper">
+        <input class="form-contacts__input" type="text" id="phone" placeholder="Введите телефон">
+        <div class="form-contacts__icon"></div>
+        </div>
+        <label class="form-contacts__label" for="email">Электронная почта</label>
+        <div class="form-contacts__wrapper">
+        <input class="form-contacts__input" type="text" id="email" placeholder="Введите e-mail">
+        <div class="form-contacts__icon"></div>
+        </div>
+        </div>
+      </fieldset>
+      <fieldset class="form-contacts__fieldset">
+        <legend class="form-contacts__title">Ваше&nbsp;общее&nbsp;впечатление:</legend>
+        <div class="form-contacts__wrapper">
+        <input class="form-contacts__input" type="radio" name="review__mark" id="positive">
+        <label class="form-contacts__label" for="positive">Скорее положительное</label>
+        </div>
+        <div class="form-contacts__wrapper">
+        <input class="form-contacts__input" type="radio" name="review__mark" id="negative">
+        <label class="form-contacts__label" for="negative">Скорее отрицательное</label>
+        </div>
+        <div class="form-contacts__wrapper">
+        <input class="form-contacts__input" type="radio" name="review__mark" id="no-answer">
+        <label class="form-contacts__label" for="no-answer">Затрудняюсь ответить</label>
+        </div>
+      </fieldset>
+      <fieldset class="form-contacts__fieldset">
+        <legend class="form-contacts__title">Посещенные достопримечательности:</legend>
+        <div class="form-contacts__wrapper-outside">
+        <div class="form-contacts__wrapper">
+        <input class="form-contacts__input" type="checkbox" name="bridge" id="bridge">
+        <label class="form-contacts__label" for="bridge">Мост Дьявола</label>
+        </div>
+        <div class="form-contacts__wrapper">
+        <input class="form-contacts__input" type="checkbox" name="mountain" id="mountain">
+        <label class="form-contacts__label" for="mountain">Гора-Колокол</label>
+        </div>
+        <div class="form-contacts__wrapper">
+        <input class="form-contacts__input" type="checkbox" name="park" id="park">
+        <label class="form-contacts__label" for="park">Слайд-Парк</label>
+        </div>
+        <div class="form-contacts__wrapper">
+        <input class="form-contacts__input" type="checkbox" name="rocks" id="rocks">
+        <label class="form-contacts__label" for="rocks">Красные скалы</label>
+        </div>
+        </div>
+      </fieldset>
+      <fieldset class="form-contacts__fieldset">
+        <legend class="form-contacts__title" for="emotions">Опишите свои эмоции:</legend>
+        <textarea class="form-contacts__text" name="emotions__text" id="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+      </fieldset>
+      <div class="form-contacts__wrapper">
+      <button class="form-contacts__button" type="submit">Отправить отзыв</button>
+      <p class="form-contacts__remark">*-Обязательные поля</p>
+      </div>
+    </form>
+  </main>
+  <footer class="page-footer page-footer--form">
+    <p class="page-footer__hashtag">#Visitsedona</p>
+    <ul class="page-footer__socials socials">
+      <li class="socials__item socials__item--twitter"><a href="#" aria-label="Твиттер"></a></li>
+      <li class="socials__item socials__item--facebook"><a href="#" aria-label="Фейсбук"></a></li>
+      <li class="socials__item socials__item--youtube"><a href="#" aria-label="Инстаграм"></a></li>
+    </ul>
+    <p class="page-footer__copyright">Разработано</p>
+  </footer>
+
+</body>
+
+</html>
