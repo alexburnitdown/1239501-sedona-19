@@ -31,6 +31,7 @@
 }
 
 .form-contacts__label {
+  position: relative;
   line-height: 58px;
 }
 
@@ -100,7 +101,7 @@
 }
 
 .form-contacts__fieldset:nth-child(2) {
-  
+
   .no-margin-padding();
   .container ();
   width: 320px;
@@ -130,7 +131,6 @@
   justify-content: flex-start;
   margin-top: -8px;
   margin-bottom: -8px;
-  
 }
 
 .form-contacts__fieldset:nth-child(3) {
@@ -154,6 +154,7 @@
   text-transform: none;
   font-size: 18px;
   line-height: 58px;
+  margin-left: 74px;
 }
 
 .form-contacts__fieldset:nth-child(4) .form-contacts__wrapper {
@@ -172,6 +173,7 @@
   text-transform: none;
   font-size: 18px;
   line-height: 58px;
+  margin-left: 74px;
 }
 
 .form-contacts__fieldset:nth-child(5) .form-contacts__title {
@@ -183,9 +185,56 @@
 }
 
 .form-contacts__fieldset:nth-child(2) .form-contacts__input::placeholder {
-    font-weight: bold;
-    font-size: 18px;
-    color: black;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
+.form-contacts input[type="radio"],
+.form-contacts__fieldset input[type="checkbox"] {
+  .visually-hidden();
+}
+
+input[type="radio"] + .form-contacts__label::before {
+  content: "";
+  position: absolute;
+  height: 56px;
+  width: 56px;
+  margin-left: -74px;
+  background-image: url(../img/radio-off.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + .form-contacts__label::before {
+  content: "";
+  position: absolute;
+  height: 56px;
+  width: 56px;
+  background-image: url(../img/radio-on.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + .form-contacts__label::before {
+  content: "";
+  position: absolute;
+  height: 56px;
+  width: 56px;
+  margin-left: -74px;
+  background-image: url(../img/checkbox-off.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + .form-contacts__label::before {
+  content: "";
+  position: absolute;
+  height: 56px;
+  width: 56px;
+  background-image: url(../img/checkbox-on.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 @media (min-width: @tablet-width) {
