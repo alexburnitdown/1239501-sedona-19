@@ -98,8 +98,8 @@
     display: flex;
     width: 671px;
 
-    padding-top: 160px;
-    padding-bottom: 47px;
+    padding-top: 150px;
+    padding-bottom: 57px;
 
     box-sizing: border-box;
     background-color: white;
@@ -117,15 +117,70 @@
     order: 1;
   }
 
+  .advantages__item:nth-child(1) .advantages__description {
+
+  }
+
+  .advantages__item:nth-child(1) .advantages__description {
+    .no-margin-padding();
+    
+    padding-top: 20px;
+    width: 155px;
+  }
+
+  .advantages__item:nth-child(2) .advantages__description {
+    .no-margin-padding();
+    
+    padding-top: 20px;
+    width: 155px;
+  }
+
+  .advantages__item:nth-child(3) .advantages__description {
+    .no-margin-padding();
+
+    padding-top: 20px;
+    width: 155px;
+  }
+
+  .advantages__item:nth-child(1) .advantages__title::before {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 72px;
+    top: 0;
+    left: 50%;
+    margin-top: -90px;
+  }
+
   .advantages__item:nth-child(2) {
     width: 165px;
     order: 3;
+  }
+
+  .advantages__item:nth-child(2) .advantages__title::before {
+    content: "";
+    position: absolute;
+    width: 77px;
+    height: 74px;
+    top: 0;
+    left: 50%;
+    margin-top: -100px;
   }
 
   .advantages__item:nth-child(3) {
     max-width: 165px;
     margin-right: 100px;
     order: 2;
+  }
+
+  .advantages__item:nth-child(3) .advantages__title::before {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 0;
+    left: 50%;
+    margin-top: -90px;
   }
 
   .advantages__title {
@@ -140,8 +195,8 @@
     display: flex;
     width: 1044px;
 
-    padding-top: 164px;
-    padding-bottom: 85px;
+    padding-top: 150px;
+    padding-bottom: 65px;
 
     box-sizing: border-box;
     background-color: white;
@@ -155,7 +210,8 @@
 
   .advantages__item:nth-child(1) {
     max-width: 252px;
-    margin-right: 134px;
+    margin-left: 40px;
+    margin-right: 250px;
     order: 1;
   }
 
@@ -166,7 +222,7 @@
 
   .advantages__item:nth-child(3) {
     max-width: 283px;
-    margin-right: 151px;
+    margin-right: 210px;
     order: 2;
   }
 }
