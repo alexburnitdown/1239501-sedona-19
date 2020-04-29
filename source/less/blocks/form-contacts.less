@@ -101,16 +101,30 @@
   line-height: 58px;
 }
 
-.form-contacts__fieldset:nth-child(2) {
+.form-contacts__fieldset:nth-child(1) {
+  padding-bottom: 20px;
+}
 
+.form-contacts__fieldset:nth-child(1) .form-contacts__input {
+  box-sizing: border-box;
+}
+
+.form-contacts__fieldset:nth-child(1) .form-contacts__input::placeholder,
+.form-contacts__fieldset:nth-child(2) .form-contacts__input::placeholder {
+  font-size: 17px;
+}
+
+.form-contacts__fieldset:nth-child(2) {
   .no-margin-padding();
   .container ();
+
   width: 320px;
   padding-bottom: 53px;
 }
 
 .form-contacts__fieldset:nth-child(2) .form-contacts__wrapper-outside {
   .container ();
+
   width: 280px;
   text-align: left;
 }
@@ -211,12 +225,6 @@
 
 .form-contacts__remark {
   display: none;
-}
-
-.form-contacts__fieldset:nth-child(2) .form-contacts__input::placeholder {
-  font-weight: bold;
-  font-size: 18px;
-  color: black;
 }
 
 .form-contacts input[type="radio"],
@@ -338,11 +346,10 @@ input[type="checkbox"]:checked + .form-contacts__label::before {
   }
 
   .form-contacts__fieldset:nth-child(2) {
-
     display: block;
     width: 648px;
 
-    padding-bottom: 0px;
+    padding-bottom: 5px;
     order: 2;
   }
 
@@ -363,11 +370,13 @@ input[type="checkbox"]:checked + .form-contacts__label::before {
   }
 
   .form-contacts__fieldset:nth-child(2) .form-contacts__label {
+    .no-margin-padding();
+
     display: block;
-    max-width: 162px;
+    max-width: 250px;
 
     margin-left: 20px;
-    padding-top: 31px;
+    padding-top: 28px;
     padding-bottom: 5px;
     text-align: left;
     line-height: 20px;
@@ -375,17 +384,12 @@ input[type="checkbox"]:checked + .form-contacts__label::before {
 
   .form-contacts__fieldset:nth-child(2) .form-contacts__input {
     width: 590px;
-    margin-left: 0px;
+    padding-left: 5px;
+    box-sizing: border-box;
   }
 
   .form-contacts__icon{
     width: 58px;
-  }
-
-  .form-contacts__fieldset:nth-child(2) .form-contacts__input::placeholder {
-    font-weight: bold;
-    font-size: 18px;
-    color: black;
   }
 
   .form-contacts__fieldset:nth-child(4) .form-contacts__wrapper-outside {
@@ -497,6 +501,14 @@ input[type="checkbox"]:checked + .form-contacts__label::before {
     margin: 0px;
   }
 
+  .form-contacts__fieldset:nth-child(1) .form-contacts__title {
+    margin-left: 85px;
+  }
+
+  .form-contacts__fieldset:nth-child(1) .form-contacts__label {
+    margin-left: 5px;
+  }
+
   .form-contacts__fieldset:nth-child(3) {
     margin: 0px;
   }
@@ -522,21 +534,31 @@ input[type="checkbox"]:checked + .form-contacts__label::before {
     width: 315px;
   }
 
+  .form-contacts__fieldset:nth-child(2) .form-contacts__label {
+    margin-right: 20px;
+    margin-left: 70px;
+    padding-top: 0px;
+    text-align: left;
+    line-height: 65px;
+  }
+
   .form-contacts__fieldset:nth-child(2) .form-contacts__label:nth-child(1) {
     margin-left: 0px;
   }
 
-  .form-contacts__fieldset:nth-child(2) .form-contacts__label {
-    margin-right: 20px;
-    margin-left: 79px;
-    padding-top: 0px;
-    text-align: left;
-    line-height: 58px;
+  .form-contacts__fieldset:nth-child(2) .form-contacts__label:nth-child(2) {
+    margin-left: 0px;
   }
 
   .form-contacts__fieldset:nth-child(2) .form-contacts__input {
     .no-margin-padding();
+
     width: 257px;
+    font-size: 17px;
+  }
+
+  .form-contacts__fieldset:nth-child(2) .form-contacts__input:placeholder {
+    font-size: 17px;
   }
 
   .form-contacts__fieldset:nth-child(2) .form-contacts__wrapper-outside {
@@ -551,30 +573,34 @@ input[type="checkbox"]:checked + .form-contacts__label::before {
 
    .form-contacts__fieldset:nth-child(2) .form-contacts__title {
     padding-top: 55px;
-    padding-bottom: 77px;
+    padding-bottom: 70px;
   }
 
   .form-contacts__fieldset:nth-child(4) .form-contacts__title {
     padding-top: 40px;
-    padding-bottom: 45px;
+    padding-bottom: 40px;
   }
 
   .form-contacts__fieldset:nth-child(4) .form-contacts__wrapper-outside {
     display: flex;
     width: 951px;
+    margin-left: -5px;
   }
 
   .form-contacts__fieldset:nth-child(4) .form-contacts__wrapper {
-   margin-right: 40px;
+   margin-right: 55px;
+  }
+
+  .form-contacts__fieldset:nth-child(4) .form-contacts__wrapper:nth-child(1) {
+    margin-right: 48px;
+  }
+
+  .form-contacts__fieldset:nth-child(4) .form-contacts__wrapper:nth-child(3) {
+    margin-right: 27px;
   }
 
   .form-contacts__fieldset:nth-child(4) .form-contacts__wrapper:nth-child(4n) {
     margin-right: 0px;
-  }
-
-  .form-contacts__fieldset:nth-child(4) .form-contacts__wrapper:nth-child(odd) {
-    .no-margin-padding();
-    margin-right: 45px;
   }
 
   .form-contacts__fieldset:nth-child(5) {
@@ -593,7 +619,7 @@ input[type="checkbox"]:checked + .form-contacts__label::before {
   }
 
   .form-contacts__fieldset:nth-child(5) .form-contacts__title {
-    padding-top: 65px;
+    padding-top: 35px;
     padding-bottom: 60px;
   }
 
