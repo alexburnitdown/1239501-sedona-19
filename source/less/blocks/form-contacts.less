@@ -60,15 +60,15 @@
 
 .form-contacts__icon {
   position: relative;
-  width: 58px;
+  width: 62px;
   height: 58px;
   background-color: #e6e6e6;
 }
 
 .form-contacts__text {
-  width: 290px;
+  width: 280px;
   height: 150px;
-  padding-top: 20px;
+  padding-top: 13px;
   padding-right: 33px;
   box-sizing: border-box;
 
@@ -78,19 +78,21 @@
 }
 
 .form-contacts__input::placeholder {
-  padding-left: 15px;
+  padding-left: 10px;
 
   font-weight: bold;
-  font-size: 18px;
+  font-size: 10px;
   color: black;
 }
 
 .form-contacts__text::placeholder {
-  padding-left: 20px;
+  padding-left: 18px;
 
-  font-weight: bold;
+  word-spacing: -4px;
   font-size: 17px;
+  font-weight: 700;
   color: black;
+  line-height: 26px;
 }
 
 .form-contacts__button {
@@ -101,7 +103,7 @@
   width: 280px;
   min-height: 58px;
   margin: 0px auto;
-  margin-top: 40px;
+  margin-top: 35px;
   margin-bottom: 10px;
 
   color: white;
@@ -118,12 +120,11 @@
 
 .form-contacts__fieldset:nth-child(1) .form-contacts__input {
   box-sizing: border-box;
-
 }
 
 .form-contacts__fieldset:nth-child(1) .form-contacts__input::placeholder,
 .form-contacts__fieldset:nth-child(2) .form-contacts__input::placeholder {
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .form-contacts__fieldset:nth-child(2) {
@@ -142,6 +143,7 @@
 }
 
 .form-contacts__fieldset:nth-child(2) .form-contacts__title {
+  padding-top: 5px;
   padding-bottom: 5px;
 }
 
@@ -151,6 +153,9 @@
 
 .form-contacts__fieldset:nth-child(2) .form-contacts__input {
   width: 232px;
+  padding-left: 10px;
+  padding-top: 0px;
+  outline: 1px solid red;
 }
 
 .form-contacts__fieldset:nth-child(2) .form-contacts__icon--phone::before {
@@ -205,15 +210,17 @@
 }
 
 .form-contacts__fieldset:nth-child(3) .form-contacts__label {
+  margin-left: 77px;
+  margin-top: 3px;
+
   font-weight: bold;
   text-transform: none;
   font-size: 18px;
-  line-height: 58px;
-  margin-left: 74px;
+  line-height: 55px;
 }
 
-.form-contacts__fieldset:nth-child(4) .form-contacts__wrapper {
-  justify-content: flex-start;
+.form-contacts__fieldset:nth-child(4) .form-contacts__title {
+  padding-bottom: 15px;
 }
 
 .form-contacts__fieldset:nth-child(4) .form-contacts__input {
@@ -227,12 +234,12 @@
   font-weight: bold;
   text-transform: none;
   font-size: 18px;
-  line-height: 58px;
-  margin-left: 74px;
+  line-height: 60px;
+  margin-left: 77px;
 }
 
 .form-contacts__fieldset:nth-child(5) .form-contacts__title {
-  padding-top: 10px;
+  padding-top: 7px;
 }
 
 .form-contacts__remark {
@@ -249,7 +256,7 @@ input[type="radio"] + .form-contacts__label::before {
   position: absolute;
   height: 56px;
   width: 56px;
-  margin-left: -74px;
+  margin-left: -77px;
   background-image: url(../img/radio-off.png);
   background-repeat: no-repeat;
   cursor: pointer;
@@ -270,7 +277,7 @@ input[type="checkbox"] + .form-contacts__label::before {
   position: absolute;
   height: 56px;
   width: 56px;
-  margin-left: -74px;
+  margin-left: -77px;
   background-image: url(../img/checkbox-off.png);
   background-repeat: no-repeat;
   cursor: pointer;
