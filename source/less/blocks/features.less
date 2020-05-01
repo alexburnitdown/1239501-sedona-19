@@ -377,19 +377,37 @@
     .no-margin-padding();
 
     width: 400px;
-    padding-top: 46px;
+    padding-top: 44px;
   }
 
   .features>.features__item:nth-child(1) {
     width: 1200px;
   }
 
+  .features>.features__item:nth-child(1) .features__title-wrapper {
+    padding-top: 48px;
+  }
+
   .features>.features__item:nth-child(1) .features__image {
     width: 800px;
-    height: 258px;
 
     background-image: url(../img/main-city-desktop@1x.jpg);
     background-position: 50% 50%;
+  }
+
+  .features>.features__item:nth-child(1) .features__title {
+    max-width: 162px;
+    padding: 0px;
+    padding-top: 5px;
+  }
+
+  .features>.features__item:nth-child(1) .features__number {
+    padding-bottom: 20px;
+  }
+
+  .features>.features__item:nth-child(1) .features__description {
+    max-width: 282px;
+    padding: 0px;
   }
 
   .features>.features__item:nth-child(2) {
@@ -398,6 +416,10 @@
 
   .features>.features__item:nth-child(3) {
     width: 1200px;
+  }
+
+  .features>.features__item:nth-child(3) .features__title-wrapper {
+    padding-top: 55px;
   }
 
   .features>.features__item:nth-child(3) .features__image {
@@ -416,20 +438,12 @@
     width: 285px;
   }
 
-  .features>.features__item:nth-child(1) .features__title-wrapper {
-    padding-top: 55px;
-  }
-
   .features__item:nth-child(2) .features__description {
     width: 262px;
   }
 
   .features__item:nth-child(3) .features__description {
     width: 260px;
-  }
-
-  .features>.features__item:nth-child(3) .features__title-wrapper {
-    padding-top: 55px;
   }
 
 }
