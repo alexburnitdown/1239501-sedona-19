@@ -102,7 +102,7 @@
 
   position: relative;
   width: 320px;
-  min-height: 260px;
+  min-height: 257px;
 
   background-color: lightgrey;
   background-image: url(../img/main-city-mobile@1x.jpg);
@@ -163,7 +163,7 @@
 
 .features__item:nth-child(1) .features__title {
   padding-top: 27px;
-  padding-bottom: 3px;
+  padding-bottom: 0px;
 }
 
 .features__item:nth-child(1) .features__description {
@@ -191,7 +191,7 @@
 .features__item:nth-child(3) .features__description {
   .container();
 
-  width: 246px;
+  width: 256px;
 
   padding-bottom: 20px;
 
@@ -219,7 +219,6 @@
     .container();
 
     display: flex;
-    min-height: 255px;
     width: 768px;
   }
 
@@ -227,7 +226,7 @@
     .no-margin-padding();
 
     width: 255px;
-    padding-top: 46px;
+    padding-top: 43px;
   }
 
   .features__title {
@@ -243,25 +242,27 @@
     .container();
 
     width: 768px;
-  }
-
-  .features>.features__item:nth-child(2) {
-    .container();
-
-    width: 768px;
-  }
-
-  .features>.features__item:nth-child(3) {
-    .container();
-
-    width: 768px;
+    outline: 1px solid red;
   }
 
   .features>.features__item:nth-child(1) .features__image {
-    width: 512px;
-    height: 256px;
+    width: 514px;
 
     background-image: url(../img/main-city-tablet@1x.jpg);
+  }
+
+  .features>.features__item:nth-child(1) .features__title {
+    max-width: 162px;
+    padding: 0px;
+    padding-bottom: 5px;
+  }
+
+  .features>.features__item:nth-child(1) .features__number {
+    padding-bottom: 17px;
+  }
+
+  .features>.features__item:nth-child(1) .features__description {
+    max-width: 162px;
   }
 
   .features>.features__item:nth-child(2) {
@@ -283,23 +284,10 @@
     background-image: url(../img/main-bridge-tablet@1x.jpg);
   }
 
-  .features>.features__item:nth-child(1) .features__title {
-    max-width: 162px;
-    padding: 0px;
-  }
-
-  .features>.features__item:nth-child(1) .features__description {
-    max-width: 162px;
-    padding-bottom: 0px;
-  }
-
-  .features>.features__item:nth-child(2) {
-    .container();
-  }
-
   .features>.features__item:nth-child(3) .features__title {
     max-width: 162px;
     padding: 0px;
+    margin-top: 5px;
   }
 
   .features>.features__item:nth-child(3) .features__description {
@@ -307,6 +295,7 @@
     .container();
 
     max-width: 154px;
+    margin-top: 5px;
   }
 
   .features>.features__item:nth-child(3) .features__title-wrapper {
@@ -337,29 +326,32 @@
 
   .features__item:nth-child(1) .features__title {
     width: 159px;
-    padding-top: 45px;
+    padding-top: 43px;
   }
 
   .features__item:nth-child(2) .features__title {
     width: 132px;
-    padding-top: 45px;
+    padding-top: 43px;
   }
 
   .features__item:nth-child(3) .features__title {
     width: 132px;
-    padding-top: 45px;
+    padding-top: 43px;
   }
 
   .features__item:nth-child(1) .features__description {
     width: 159px;
+    margin-top: 5px;
   }
 
   .features__item:nth-child(2) .features__description {
     width: 132px;
+    margin-top: 5px;
   }
 
   .features__item:nth-child(3) .features__description {
     width: 145px;
+    margin-top: 5px;
   }
 }
 
