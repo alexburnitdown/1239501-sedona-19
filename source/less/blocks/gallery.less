@@ -18,8 +18,6 @@
 .gallery__title {
   .no-margin-padding();
 
-  padding-top: 9px;
-
   font-size: 14px;
 }
 
@@ -61,10 +59,21 @@
   width: 280px;
   min-height: 280px;
 
+  margin-top: 15px;
+
   background-color: lightgrey;
   background-image: url(../img/photo-cactus-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: 50% 0;
+}
+
+.gallery__item:nth-child(1) .gallery__title {
+  margin-top: 15px;
+}
+
+.gallery__item:nth-child(1) .gallery__likes-wrapper {
+  margin-top: 3px;
+    outline: 1px solid red;
 }
 
 .gallery>.gallery__item .gallery__image {
@@ -81,6 +90,14 @@
   background-position: 50% 0;
 }
 
+.gallery>.gallery__item .gallery__title {
+  margin-top: 15px;
+}
+
+.gallery>.gallery__item .gallery__likes-wrapper {
+  margin-top: 5px;
+}
+
 .gallery__item:nth-child(2) .gallery__image {
   .no-margin-padding();
   .container();
@@ -89,10 +106,20 @@
   width: 280px;
   min-height: 280px;
 
+  margin-top: 15px;
+
   background-color: lightgrey;
   background-image: url(../img/photo-roads-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: 50% 0;
+}
+
+.gallery__item:nth-child(2) .gallery__title {
+  margin-top: 15px;
+}
+
+.gallery__item:nth-child(2) .gallery__likes-wrapper {
+  margin-top: 5px;
 }
 
 .gallery__item:nth-child(3) .gallery__image {
@@ -103,10 +130,20 @@
   width: 280px;
   min-height: 280px;
 
+  margin-top: 15px;
+
   background-color: lightgrey;
   background-image: url(../img/photo-bridge-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: 50% 0;
+}
+
+.gallery__item:nth-child(3) .gallery__title {
+  margin-top: 15px;
+}
+
+.gallery__item:nth-child(3) .gallery__likes-wrapper {
+  margin-top: 5px;
 }
 
 @media (min-width: @tablet-width) {
@@ -130,8 +167,25 @@
     background-color: @white-three;
   }
 
+  .gallery__likes {
+    .no-margin-padding();
+
+    font-weight: bold;
+    font-size: 15px;
+  }
+
   .gallery__item:not(:first-child):nth-child(2n) .gallery__wrapper {
+    padding-right: 35px;
+
     background-color: @white-five;
+  }
+
+  .gallery__item:not(:first-child):nth-child(2n) .gallery__button {
+    margin-right: 8px;
+  }
+
+ .gallery__item .gallery__wrapper {
+    padding-right: 30px;
   }
 
   .gallery__item {
@@ -161,14 +215,15 @@
     padding-top: 20px;
   }
 
-  .gallery>.gallery__item .gallery__image {
-    width: 648px;
-    height: 400px;
-  }
-
   .gallery>.gallery__item .gallery__wrapper {
     width: 648px;
     min-height: 80px;
+
+    padding-right: 20px;
+  }
+
+  .gallery>.gallery__item .gallery__title {
+    margin-top: 10px;
   }
 
   .gallery__author {
@@ -182,11 +237,22 @@
     flex-wrap: wrap;
   }
 
+  .gallery__item:nth-child(1) .gallery__title,
+  .gallery__item:nth-child(2) .gallery__title,
+  .gallery__item:nth-child(3) .gallery__title {
+    margin-top: 10px;
+  }
+
   .gallery__item:nth-child(1) .gallery__image {
     width: 324px;
     min-height: 267px;
 
+    margin-top: 0px;
     background-image: url(../img/photo-cactus-tablet@1x.jpg);
+  }
+
+  .gallery__item:nth-child(1) .gallery__button {
+    margin-right: 8px;
   }
 
   .gallery>.gallery__item .gallery__image {
@@ -200,6 +266,8 @@
     width: 324px;
     min-height: 267px;
 
+    margin-top: 0px;
+
     background-image: url(../img/photo-roads-tablet@1x.jpg);
   }
 
@@ -207,7 +275,12 @@
     width: 324px;
     min-height: 267px;
 
+    margin-top: 0px;
     background-image: url(../img/photo-bridge-tablet@1x.jpg);
+  }
+
+  .gallery__item:nth-child(3) .gallery__button {
+    margin-right: 8px;
   }
 }
 
