@@ -102,7 +102,7 @@
 
   position: relative;
   width: 320px;
-  min-height: 257px;
+  min-height: 259px;
 
   background-color: lightgrey;
   background-image: url(../img/main-city-mobile@1x.jpg);
@@ -157,6 +157,17 @@
   color: #333333;
 }
 
+.features__item:not(:first-child) .features__title::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    background-color: lightgrey;
+    left: 50%;
+    margin-left: -140px;
+    margin-top: -27px;
+  }
+
 .features__item:nth-child(1) .features__title {
   padding-top: 27px;
   padding-bottom: 0px;
@@ -167,6 +178,7 @@
 
   width: 238px;
 
+  padding-top: 2px;
   padding-bottom: 20px;
 
   line-height: 22px;
@@ -189,7 +201,7 @@
 
   width: 256px;
 
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 
   line-height: 22px;
   color: #333333;
@@ -234,6 +246,10 @@
     height: 256px;
   }
 
+  .features__item:not(:first-child) .features__title::before {
+    .visually-hidden();
+  }
+
   .features>.features__item:nth-child(1) {
     .container();
 
@@ -241,23 +257,24 @@
   }
 
   .features>.features__item:nth-child(1) .features__image {
+    min-height: 257px;
     width: 514px;
 
     background-image: url(../img/main-city-tablet@1x.jpg);
   }
 
   .features>.features__item:nth-child(1) .features__title {
-    max-width: 162px;
+    width: 162px;
     padding: 0px;
     padding-bottom: 5px;
   }
 
   .features>.features__item:nth-child(1) .features__number {
-    padding-bottom: 17px;
+    padding-bottom: 15px;
   }
 
   .features>.features__item:nth-child(1) .features__description {
-    max-width: 162px;
+    width: 162px;
   }
 
   .features>.features__item:nth-child(2) {
@@ -280,7 +297,7 @@
   }
 
   .features>.features__item:nth-child(3) .features__title {
-    max-width: 162px;
+    width: 162px;
     padding: 0px;
     margin-top: 5px;
   }
@@ -289,7 +306,7 @@
     .no-margin-padding();
     .container();
 
-    max-width: 154px;
+    width: 154px;
     margin-top: 5px;
   }
 
@@ -375,6 +392,10 @@
     padding-top: 44px;
   }
 
+  .features__item:not(:first-child) .features__title::before {
+    .visually-hidden();
+  }
+
   .features>.features__item:nth-child(1) {
     width: 1200px;
   }
@@ -391,7 +412,7 @@
   }
 
   .features>.features__item:nth-child(1) .features__title {
-    max-width: 162px;
+    width: 162px;
     padding: 0px;
     padding-top: 5px;
   }
@@ -401,7 +422,7 @@
   }
 
   .features>.features__item:nth-child(1) .features__description {
-    max-width: 282px;
+    width: 282px;
     padding: 0px;
   }
 
@@ -440,7 +461,7 @@
   }
 
   .features>.features__item:nth-child(3) .features__description {
-    max-width: 232px;
+    width: 232px;
   }
 
   .features__flex {

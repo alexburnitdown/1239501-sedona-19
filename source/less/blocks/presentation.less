@@ -2,7 +2,7 @@
   .no-margin-padding();
   .container ();
 
-  max-width: 236px;
+  width: 236px;
 
   padding-top: 25px;
   padding-bottom: 25px;
@@ -14,7 +14,7 @@
   .no-margin-padding();
   .container ();
 
-  max-width: 236px;
+  width: 236px;
 
   padding-bottom: 30px;
 
@@ -141,7 +141,7 @@
 
 @media (min-width: @tablet-width) {
   .presentation__title {
-    max-width: 415px;
+    width: 415px;
 
     padding-top: 68px;
     padding-bottom: 30px;
@@ -150,7 +150,7 @@
   }
 
   .presentation__description {
-    max-width: 415px;
+    width: 415px;
 
     padding-bottom: 73px;
 
@@ -278,15 +278,25 @@
     padding-bottom: 70px;
   }
 
-.presentation__button--replay::before {
+  .presentation__range::after {
+    left: 25%;
+  }
+
+  .presentation__button--replay::before {
     left: 4%;
+
+    margin-left: 0px;
   }
 
   .presentation__button--subtitles::before {
     left: 84%;
+
+    margin-left: 2px;
   }
 
   .presentation__button--fullscreen::before {
     left: 92%;
+
+    margin-left: 2px;
   }
 }
