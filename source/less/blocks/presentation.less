@@ -10,6 +10,17 @@
   font-size: 18px;
 }
 
+.presentation__title::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    background-color: @bg-input;
+    left: 50%;
+    margin-left: -160px;
+    margin-top: -23px;
+  }
+
 .presentation__description {
   .no-margin-padding();
   .container ();
@@ -149,6 +160,10 @@
     font-size: 30px;
   }
 
+  .presentation__title::before{
+    .visually-hidden();
+  }
+
   .presentation__description {
     width: 415px;
 
@@ -199,11 +214,11 @@
   .presentation__range::after {
     content: "";
     position: absolute;
-    width: 11px;
+    width: 10px;
     height: 10px;
     top: 50%;
     left: 32%;
-    margin-top: -4px;
+    margin-top: -5px;
     background-color: white;
     border-radius: 50%;
   }
@@ -272,6 +287,10 @@
   .presentation__title {
     padding-top: 72px;
     padding-bottom: 30px;
+  }
+
+  .presentation__title::before{
+    .visually-hidden();
   }
 
   .presentation__description {

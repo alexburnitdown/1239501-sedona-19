@@ -81,7 +81,6 @@
   width: 280px;
   height: 150px;
   padding-top: 13px;
-  padding-right: 33px;
   box-sizing: border-box;
 
   background-color: @bg-input;
@@ -100,7 +99,6 @@
 .form-contacts__text::placeholder {
   padding-left: 18px;
 
-  word-spacing: -4px;
   font-size: 17px;
   font-weight: 700;
   color: black;
@@ -137,6 +135,10 @@
   padding-top: 6px;
 }
 
+.form-contacts__input--family {
+  width: 195px;
+}
+
 .form-contacts__fieldset:nth-child(1) .form-contacts__input::placeholder,
 .form-contacts__fieldset:nth-child(2) .form-contacts__input::placeholder {
   font-size: 16px;
@@ -144,10 +146,9 @@
 
 .form-contacts__fieldset:nth-child(2) {
   .no-margin-padding();
-  .container ();
 
-  width: 320px;
   padding-bottom: 53px;
+  margin-left: 3px;
 }
 
 .form-contacts__fieldset:nth-child(2) .form-contacts__wrapper-outside {
@@ -158,9 +159,13 @@
 }
 
 .form-contacts__fieldset:nth-child(2) .form-contacts__title {
+  .no-margin-padding();
+  .container ();
+
+  width: 250px;
   padding-top: 5px;
-  padding-bottom: 5px;
-  letter-spacing: 0.41px;
+  padding-bottom: 3px;
+  letter-spacing: 0.15px;
 }
 
 .form-contacts__label--phone,
@@ -170,7 +175,7 @@
 
 .form-contacts__input--phone,
 .form-contacts__input--email {
-  width: 215px;
+  width: 212px;
   padding-left: 10px;
   padding-top: 0px;
 }
@@ -196,8 +201,8 @@
   height: 12px;
   top: 50%;
   left: 50%;
-  margin-top: -6px;
-  margin-left: -8px;
+  margin-top: -8px;
+  margin-left: -10px;
   background-image: url(../img/icon-mail.svg);
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -209,6 +214,10 @@
   justify-content: flex-start;
   margin-top: -8px;
   margin-bottom: -8px;
+}
+
+.form-contacts__fieldset:nth-child(2) .form-contacts__wrapper:nth-child(2) {
+    margin-bottom: -5px;
 }
 
 .form-contacts__fieldset:nth-child(3) {
@@ -252,12 +261,21 @@
   font-weight: bold;
   text-transform: none;
   font-size: 18px;
-  line-height: 60px;
+  line-height: 58px;
   margin-left: 77px;
 }
 
+.form-contacts__label--park,
+.form-contacts__label--bell {
+  letter-spacing: 0.6px;
+}
+
+.form-contacts__label--park {
+  margin-top: 3px;
+}
+
 .form-contacts__fieldset:nth-child(5) .form-contacts__title {
-  padding-top: 7px;
+  padding-top: 10px;
 }
 
 .form-contacts__remark {
@@ -352,6 +370,7 @@ input[type="checkbox"]:checked + .form-contacts__label::before {
 
   .form-contacts__fieldset:nth-child(3) .form-contacts__title {
     padding-left: 0px;
+    padding-right: 10px;
     margin-bottom: 37px;
     letter-spacing: 0.1px;
   }
@@ -419,6 +438,7 @@ input[type="checkbox"]:checked + .form-contacts__label::before {
     width: 648px;
 
     padding-bottom: 2px;
+    margin-left: 0px;
     order: 2;
   }
 
@@ -438,9 +458,32 @@ input[type="checkbox"]:checked + .form-contacts__label::before {
   }
 
   .form-contacts__fieldset:nth-child(2) .form-contacts__title {
+    width: 280px;
     padding-top: 63px;
     padding-bottom: 0px;
     letter-spacing: 0px;
+  }
+
+  .form-contacts__fieldset:nth-child(2) .form-contacts__title::before {
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 1px;
+    background-color: @bg-input;
+    left: 12%;
+    margin-left: 10px;
+    margin-top: 11px;
+  }
+
+  .form-contacts__fieldset:nth-child(2) .form-contacts__title::after {
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 1px;
+    background-color: @bg-input;
+    left: 70%;
+    margin-left: 23px;
+    margin-top: 12px;
   }
 
   .form-contacts__label--phone,
@@ -468,12 +511,55 @@ input[type="checkbox"]:checked + .form-contacts__label::before {
     width: 58px;
   }
 
+  .form-contacts__fieldset:nth-child(4) {
+    display: block;
+    width: 650px;
+
+    padding: 0px;
+
+    order: 3;
+  }
+
+  .form-contacts__fieldset:nth-child(4) .form-contacts__title {
+    .no-margin-padding();
+
+    padding-top: 58px;
+    padding-bottom: 40px;
+  }
+
+  .form-contacts__fieldset:nth-child(4) .form-contacts__title::before {
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 1px;
+    background-color: @bg-input;
+    left: 12%;
+    margin-left: 10px;
+    margin-top: 25px;
+  }
+
+  .form-contacts__fieldset:nth-child(4) .form-contacts__title::after {
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 1px;
+    background-color: @bg-input;
+    left: 70%;
+    margin-left: 23px;
+    margin-top: -2px;
+  }
+
+  .form-contacts__fieldset:nth-child(4) .form-contacts__wrapper:nth-child(1) {
+    margin-bottom: 30px;
+  }
+
   .form-contacts__fieldset:nth-child(4) .form-contacts__wrapper-outside {
     .container ();
 
     display: flex;
     flex-wrap: wrap;
     width: 464px;
+    padding-left: 2px;
   }
 
   .form-contacts__fieldset:nth-child(4) .form-contacts__wrapper {
@@ -490,24 +576,9 @@ input[type="checkbox"]:checked + .form-contacts__label::before {
     margin-right: 54px;
   }
 
-  .form-contacts__fieldset:nth-child(4) {
-    display: block;
-    width: 648px;
-
-    padding: 0px;
-
-    order: 3;
-  }
-
-  .form-contacts__fieldset:nth-child(4) .form-contacts__title {
-    .no-margin-padding();
-
-    padding-top: 58px;
-    padding-bottom: 40px;
-  }
-
-  .form-contacts__fieldset:nth-child(4) .form-contacts__wrapper:nth-child(1) {
-    margin-bottom: 28px;
+  .form-contacts__label--park,
+  .form-contacts__label--bell {
+    letter-spacing: 0.15px;
   }
 
   .form-contacts__fieldset:nth-child(5) {
@@ -522,10 +593,32 @@ input[type="checkbox"]:checked + .form-contacts__label::before {
   .form-contacts__fieldset:nth-child(5) .form-contacts__title {
     .no-margin-padding();
 
-    padding-top: 65px;
+    padding-top: 67px;
     padding-bottom: 60px;
 
     font-size: 21px;
+  }
+
+  .form-contacts__fieldset:nth-child(5) .form-contacts__title::before {
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 1px;
+    background-color: @bg-input;
+    left: 12%;
+    margin-left: 10px;
+    margin-top: 12px;
+  }
+
+  .form-contacts__fieldset:nth-child(5) .form-contacts__title::after {
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 1px;
+    background-color: @bg-input;
+    left: 70%;
+    margin-left: 23px;
+    margin-top: 12px;
   }
 
   .form-contacts__text {
@@ -538,7 +631,7 @@ input[type="checkbox"]:checked + .form-contacts__label::before {
   }
 
   .form-contacts__text::placeholder {
-    letter-spacing: -0.4px;
+    letter-spacing: -0.5px;
     font-size: 18px;
   }
 
@@ -639,6 +732,15 @@ input[type="checkbox"]:checked + .form-contacts__label::before {
   .form-contacts__fieldset:nth-child(1) .form-contacts__input--name {
     width: 345px;
     margin-bottom: 2px;
+    padding-top: 5px;
+  }
+
+  .form-contacts__label--family {
+    margin-top: 3px;
+  }
+
+  .form-contacts__input--family {
+    margin-top: 3px;
   }
 
   .form-contacts__fieldset:nth-child(3) {
@@ -646,7 +748,7 @@ input[type="checkbox"]:checked + .form-contacts__label::before {
   }
 
   .form-contacts__fieldset:nth-child(3) .form-contacts__title {
-    padding-left: 25px;
+    padding-left: 30px;
   }
 
   .form-contacts__input {
@@ -663,8 +765,10 @@ input[type="checkbox"]:checked + .form-contacts__label::before {
   }
 
   .form-contacts__fieldset:nth-child(2) .form-contacts__title {
+    width: 285px;
     padding-top: 62px;
     padding-bottom: 70px;
+    letter-spacing: 0.15px;
   }
 
   .form-contacts__fieldset:nth-child(2) .form-contacts__title::before {
@@ -698,7 +802,7 @@ input[type="checkbox"]:checked + .form-contacts__label::before {
 
     width: 70px;
     margin-left: -5px;
-    margin-right: 21px;
+    margin-right: 18px;
 
     line-height: 65px;
   }
@@ -714,7 +818,7 @@ input[type="checkbox"]:checked + .form-contacts__label::before {
   }
 
   .form-contacts__input--phone {
-    width: 254px;
+    width: 257px;
     padding-left: 7px;
   }
 
@@ -728,7 +832,7 @@ input[type="checkbox"]:checked + .form-contacts__label::before {
   }
 
   .form-contacts__icon--email {
-    width: 55px;
+    width: 58px;
   }
 
   .form-contacts__fieldset:nth-child(2) .form-contacts__icon--email::before {
@@ -737,7 +841,7 @@ input[type="checkbox"]:checked + .form-contacts__label::before {
     top: 50%;
     left: 50%;
     margin-top: -8px;
-    margin-left: -5px;
+    margin-left: -7px;
   }
 
   .form-contacts__fieldset:nth-child(2) .form-contacts__input:placeholder {
@@ -746,7 +850,7 @@ input[type="checkbox"]:checked + .form-contacts__label::before {
 
   .form-contacts__fieldset:nth-child(2) .form-contacts__wrapper-outside {
     display: flex;
-    width: 951px;
+    width: 955px;
     align-items: top;
   }
 
