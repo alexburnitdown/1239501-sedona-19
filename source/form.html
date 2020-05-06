@@ -38,9 +38,9 @@
 <body>
   <header class="page-header">
     <nav class="main-nav">
-    <a href="#" class="main-nav__logo">
-      <p class="main-nav__logo-image"></p>
-    </a>
+      <a href="#" class="main-nav__logo">
+        <p class="main-nav__logo-image"></p>
+      </a>
       <svg class="main-nav__close" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
       <polygon fill="#ffffff" points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
       </svg>
@@ -62,37 +62,37 @@
       <fieldset class="form-contacts__fieldset">
         <legend class="form-contacts__title">Представьтесь:</legend>
         <div class="form-contacts__wrapper">
-        <label class="form-contacts__label" for="name">Имя:</label>
+        <label class="form-contacts__label" for="name">Имя*:</label>
         <input class="form-contacts__input form-contacts__input--name" type="text" id="name" placeholder="Петр" required>
         </div>
         <div class="form-contacts__wrapper">
-        <label class="form-contacts__label" for="family-name">Фамилия:</label>
+        <label class="form-contacts__label" for="family-name">Фамилия*:</label>
         <input class="form-contacts__input" type="text" id="family-name"  placeholder="Иванов" required>
         </div>
         <div class="form-contacts__wrapper">
-        <label class="form-contacts__label" for="father-name">Отчество:</label>
-        <input class="form-contacts__input" type="text" id="father-name" placeholder="Александрович">
+        <label class="form-contacts__label form-contacts__label--family" for="father-name">Отчество:</label>
+        <input class="form-contacts__input form-contacts__input--family" type="text" id="father-name" placeholder="Александрович">
         </div>
       </fieldset>
       <fieldset class="form-contacts__fieldset">
         <legend class="form-contacts__title">Контактная информация:</legend>
         <div class="form-contacts__wrapper-outside">
-        <label class="form-contacts__label" for="phone"><span class="form-contacts__label-phone">Контактный</span> телефон</label>
+        <label class="form-contacts__label form-contacts__label--phone" for="phone"><span class=" form-contacts__label-phone">Контактный</span> телефон*:</label>
         <div class="form-contacts__wrapper">
-        <input class="form-contacts__input" type="text" id="phone" placeholder="Введите телефон">
-        <div class="form-contacts__icon"></div>
+        <input class="form-contacts__input form-contacts__input--phone" type="text" id="phone" placeholder="Введите телефон">
+        <div class="form-contacts__icon form-contacts__icon--phone"></div>
         </div>
-        <label class="form-contacts__label" for="email">Электронная почта</label>
+        <label class="form-contacts__label form-contacts__label--email" for="email">Электронная почта*:</label>
         <div class="form-contacts__wrapper">
-        <input class="form-contacts__input" type="text" id="email" placeholder="Введите e-mail">
-        <div class="form-contacts__icon"></div>
+        <input class="form-contacts__input form-contacts__input--email" type="text" id="email" placeholder="Введите e-mail">
+        <div class="form-contacts__icon form-contacts__icon--email"></div>
         </div>
         </div>
       </fieldset>
       <fieldset class="form-contacts__fieldset">
         <legend class="form-contacts__title">Ваше&nbsp;общее&nbsp;впечатление:</legend>
         <div class="form-contacts__wrapper">
-        <input class="form-contacts__input" type="radio" name="review__mark" id="positive">
+        <input class="form-contacts__input" type="radio" name="review__mark" id="positive" checked>
         <label class="form-contacts__label" for="positive">Скорее положительное</label>
         </div>
         <div class="form-contacts__wrapper">
@@ -108,16 +108,16 @@
         <legend class="form-contacts__title">Посещенные достопримечательности:</legend>
         <div class="form-contacts__wrapper-outside">
         <div class="form-contacts__wrapper">
-        <input class="form-contacts__input" type="checkbox" name="bridge" id="bridge">
+        <input class="form-contacts__input" type="checkbox" name="bridge" id="bridge" checked>
         <label class="form-contacts__label" for="bridge">Мост Дьявола</label>
         </div>
         <div class="form-contacts__wrapper">
-        <input class="form-contacts__input" type="checkbox" name="mountain" id="mountain">
-        <label class="form-contacts__label" for="mountain">Гора-Колокол</label>
+        <input class="form-contacts__input" type="checkbox" name="mountain" id="mountain" checked>
+        <label class="form-contacts__label form-contacts__label--bell" for="mountain">Гора-Колокол</label>
         </div>
         <div class="form-contacts__wrapper">
-        <input class="form-contacts__input" type="checkbox" name="park" id="park">
-        <label class="form-contacts__label" for="park">Слайд-Парк</label>
+        <input class="form-contacts__input" type="checkbox" name="park" id="park" checked>
+        <label class="form-contacts__label form-contacts__label--park" for="park">Слайд-Парк</label>
         </div>
         <div class="form-contacts__wrapper">
         <input class="form-contacts__input" type="checkbox" name="rocks" id="rocks">
@@ -127,11 +127,11 @@
       </fieldset>
       <fieldset class="form-contacts__fieldset">
         <legend class="form-contacts__title" for="emotions">Опишите свои эмоции:</legend>
-        <textarea class="form-contacts__text" name="emotions__text" id="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+        <textarea class="form-contacts__text" name="emotions__text" id="emotions" cols="30" rows="10" placeholder="Опишите&nbsp;подробно&nbsp;все&nbsp;свои восторги"></textarea>
       </fieldset>
       <div class="form-contacts__wrapper">
       <button class="form-contacts__button" type="submit">Отправить отзыв</button>
-      <p class="form-contacts__remark">*-Обязательные поля</p>
+      <p class="form-contacts__remark">Обязательные поля</p>
       </div>
     </form>
   </main>
@@ -142,8 +142,25 @@
       <li class="socials__item socials__item--facebook"><a href="#" aria-label="Фейсбук"></a></li>
       <li class="socials__item socials__item--youtube"><a href="#" aria-label="Инстаграм"></a></li>
     </ul>
+    <div class="page-footer__wrapper">
     <p class="page-footer__copyright">Разработано</p>
+    <svg class="page-footer__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="27px" height="34px"><path fill="#000000" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+    </div>
   </footer>
+
+  <section class="form-modal form-modal__error">
+    <h3 class="form-modal__title">Что-то пошло не так!</h3>
+    <p class="form-modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="form-modal__button" type="button">Ок</button>
+  </section>
+
+  <section class="form-modal form-modal__success">
+    <h3 class="form-modal__title">Ваш отзыв отправлен!</h3>
+    <p class="form-modal__description">Спасибо за ваше участие. Ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+    <div class="form-modal__wrapper">
+      <button class="form-modal__button" type="button">Закрыть окно</button>
+    </div>
+  </section>
 
 </body>
 

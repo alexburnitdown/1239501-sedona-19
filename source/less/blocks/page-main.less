@@ -2,7 +2,7 @@
   .no-margin-padding();
   .container ();
 
-  max-width: 320px;
+  width: 320px;
 }
 
 .page-main__picture--index {
@@ -20,13 +20,30 @@
   position: absolute;
   width: 281px;
   height: 214px;
-  top: 0;
-  left: 0%;
+  top: 50%;
+  left: 50%;
+  margin-top: -106px;
+  margin-left: -140px;
 
   background-image: url(../img/text-sedona-index.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  outline: 1px solid red;
+  background-size: contain;
+}
+
+.page-main__picture::after {
+  content: "";
+  position: absolute;
+  width: 325px;
+  height: 26px;
+  top: 100%;
+  left: 0%;
+  margin-top: -26px;
+
+  background-image: url(../img/bg-intro-triangle-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
 }
 
 .page-main__picture--photo {
@@ -44,18 +61,20 @@
   position: absolute;
   width: 229px;
   height: 39px;
-  top: 0;
-  left: 0%;
+  top: 50%;
+  left: 50%;
+  margin-top: -30px;
+  margin-left: -115px;
 
   background-image: url(../img/text-sedona.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  outline: 1px solid red;
+  background-size: contain;
 }
 
 .page-main__picture--form {
   position: relative;
-  height: 162px;
+  height: 159px;
 
   background-color: lightgrey;
   background-image: url(../img/bg-back-mobile.jpg);
@@ -66,50 +85,65 @@
 .page-main__picture--form::before {
   content: "";
   position: absolute;
-  width: 229px;
+  width: 235px;
   height: 39px;
-  top: 0;
-  left: 0%;
+  top: 50%;
+  left: 50%;
+  margin-top: -30px;
+  margin-left: -115px;
 
   background-image: url(../img/text-sedona.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  outline: 1px solid red;
+  background-size: contain;
 }
 
 .page-main__title {
   .no-margin-padding();
   .container ();
 
-  max-width: 255px;
-  margin-top: 43px;
-  margin-bottom: 30px;
+  width: 255px;
+  margin-top: 40px;
+  margin-bottom: 27px;
 
   font-size: 18px;
 }
 
+.page-main__title--photo {
+  margin-top: 35px;
+}
+
 .page-main__title--form {
-  margin-top: 40px;
+  margin-top: 38px;
   margin-bottom: 25px;
+  letter-spacing: 0.25px;
 }
 
 .page-main__description {
   .no-margin-padding();
   .container ();
 
-  max-width: 255px;
-  margin-bottom: 23px;
+  width: 255px;
+  margin-bottom: 25px;
 
   font-size: 14px;
+  line-height: 26px;
+}
+
+.page-main__description--photo {
+  padding-bottom: 23px;
+
+  line-height: 24px;
 }
 
 .page-main__description--form {
-  margin-bottom: 30px;
+  padding-bottom: 11px;
+  line-height: 24px;
 }
 
 @media (min-width: @tablet-width) {
   .page-main__picture {
-    max-width: 768px;
+    width: 768px;
     min-height: 518px;
 
     background-color: lightgrey;
@@ -118,8 +152,31 @@
     background-position: 50% 100%;
   }
 
+  .page-main__picture--index::before {
+    content: "";
+    position: absolute;
+    width: 460px;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    margin-left: -230px;
+    margin-top: -180px;
+  }
+
+  .page-main__picture::after {
+    content: "";
+    position: absolute;
+    width: 768px;
+    height: 57px;
+    top: 100%;
+    left: 0%;
+    margin-top: -57px;
+
+    background-image: url(../img/bg-intro-triangle-tablet.svg);
+  }
+
   .page-main__picture--photo {
-    max-width: 768px;
+    width: 768px;
     min-height: 290px;
 
     background-color: lightgrey;
@@ -128,23 +185,49 @@
     background-position: 50% 100%;
   }
 
+  .page-main__picture--photo::before {
+    content: "";
+    position: absolute;
+    width: 460px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    margin-left: -230px;
+    margin-top: -50px;
+  }
+
   .page-main__picture--form {
-    max-width: 768px;
+    width: 768px;
     min-height: 290px;
 
     background-color: lightgrey;
     background-image: url(../img/bg-back-tablet@1x.jpg);
     background-repeat: no-repeat;
     background-position: 50% 100%;
+  }
+
+  .page-main__picture--form::before {
+    content: "";
+    position: absolute;
+    width: 460px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    margin-left: -228px;
+    margin-top: -50px;
+
+    background-image: url(../img/text-sedona.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 
   .page-main__title {
     .container ();
 
-    max-width: 490px;
+    width: 490px;
 
     margin-top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 
     font-size: 21px;
   }
@@ -152,7 +235,7 @@
   .page-main__title--photo {
     .container ();
 
-    max-width: 490px;
+    width: 490px;
 
     margin-top: 71px;
     margin-bottom: 32px;
@@ -163,30 +246,38 @@
   .page-main__title--form {
     .container ();
 
-    max-width: 490px;
+    width: 490px;
 
-    margin-top: 71px;
+    margin-top: 73px;
     margin-bottom: 32px;
 
     font-size: 30px;
+    letter-spacing: 0.5px;
   }
 
   .page-main__description {
-    max-width: 490px;
+    width: 490px;
     min-width: 428px;
     margin-bottom: 50px;
 
     color: #333333;
   }
 
+  .page-main__description--photo {
+    margin-bottom: 27px;
+  }
+
   .page-main__description--form {
-    margin-bottom: 61px;
+    width: 440px;
+    min-width: 428px;
+
+    margin-bottom: 54px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-main__picture {
-    max-width: 1200px;
+    width: 1200px;
     min-height: 518px;
 
     background-color: lightgrey;
@@ -195,8 +286,16 @@
     background-position: 50% 100%;
   }
 
+  .page-main__picture::after {
+    content: "";
+    position: absolute;
+    width: 1200px;
+
+    background-image: url(../img/bg-intro-triangle-desktop.svg);
+  }
+
   .page-main__picture--photo {
-    max-width: 1200px;
+    width: 1200px;
     min-height: 300px;
 
     background-color: lightgrey;
@@ -206,7 +305,7 @@
   }
 
   .page-main__picture--form {
-    max-width: 1200px;
+    width: 1200px;
     min-height: 300px;
 
     background-color: lightgrey;
@@ -230,12 +329,20 @@
 
   .page-main__title--form {
     margin-top: 113px;
-    margin-bottom: 27px;
+    margin-bottom: 30px;
 
     font-size: 30px;
   }
 
   .page-main__description {
-    margin-bottom: 48px;
+    margin-bottom: 50px;
+  }
+
+  .page-main__description--photo {
+    margin-bottom: 30px;
+  }
+
+  .page-main__description--form {
+    margin-bottom: 38px;
   }
 }
