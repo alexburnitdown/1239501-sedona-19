@@ -1,3 +1,127 @@
-.form-modal {
-  .visually-hidden();
+@media (min-width: @mobile-width) {
+
+  .form-modal--error {
+    min-height: 280px;
+    box-shadow: 0px 7px 15px 0px rgba(0, 1, 1, 0.15);
+    box-sizing: border-box;
+  }
+
+  .form-modal--success {
+    min-height: 323px;
+    box-shadow: 0px 7px 15px 0px rgba(0, 1, 1, 0.15);
+    box-sizing: border-box;
+  }
+
+  .form-modal__title {
+    .container();
+    .font();
+
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .form-modal__description {
+    .container();
+    .font();
+
+    line-height: 24px;
+    color: #333333;
+  }
+
+  .form-modal__button {
+    .container();
+    .font-button();
+  }
+
+  .form-modal__title--error {
+    width: 207px;
+    padding-top: 46px;
+    margin-bottom: 21px;
+  }
+
+  .form-modal__description--error {
+    width: 207px;
+    margin-bottom: 29px;
+  }
+
+  .form-modal__button--error {
+    .button-reset();
+
+    width: 180px;
+    min-height: 58px;
+    margin-bottom: 35px;
+    background-color: @light-grey-blue;
+    color: white;
+    font-weight: 700;
+  }
+
+  .form-modal__wrapper {
+    min-height: 98px;
+    background-color: @white-three;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .form-modal__title--success {
+    width: 214px;
+    padding-top: 49px;
+    margin-bottom: 30px;
+  }
+
+  .form-modal__description--success {
+    width: 214px;
+    margin-bottom: 38px;
+  }
+
+  .form-modal__button--success {
+    .button-reset();
+
+    width: 280px;
+    min-height: 58px;
+    background-color: @light-grey-blue;
+    color: white;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-modal__title {
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .form-modal--success {
+    width: 640px;
+    min-height: 347px;
+  }
+
+  .form-modal__wrapper {
+    min-height: 146px;
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+
+  .form-modal__title--success {
+    width: 414px;
+    padding-top: 64px;
+    margin-bottom: 30px;
+  }
+
+  .form-modal__description--success {
+    width: 414px;
+    margin-bottom: 40px;
+  }
+
+  .form-modal__button--success {
+    width: 458px;
+    font-size: 21px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .form-modal {
+    .visually-hidden();
+  }
 }
