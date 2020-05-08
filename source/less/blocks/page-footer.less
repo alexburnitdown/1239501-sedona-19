@@ -31,15 +31,24 @@
 .page-footer__icon {
   .no-margin-padding();
 
+  position: absolute;
   width: 40px;
   height: 50px;
-  position: absolute;
 
   top: 0%;
   left: 100%;
 
   margin-left: -35px;
   margin-top: -10px;
+}
+
+.page-footer__icon:hover path {
+  fill: @light-grey-blue;
+}
+
+.page-footer__icon:active path,
+.page-footer__icon:focus path {
+  fill: rgba(0, 0, 0, 0.3);
 }
 
 .page-footer--form {
