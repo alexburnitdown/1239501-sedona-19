@@ -73,9 +73,9 @@
   margin-top: 15px;
 
   background-color: lightgrey;
-  background-image: url(../img/photo-cactus-mobile@1x.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 0;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/photo-cactus-mobile@2x.jpg");
+  }
 }
 
 .gallery__item:nth-child(1) .gallery__title {
@@ -95,9 +95,9 @@
   min-height: 280px;
 
   background-color: lightgrey;
-  background-image: url(../img/photo-sunset-mobile@1x.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 0;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/photo-sunset-mobile@2x.jpg");
+  }
 }
 
 .gallery>.gallery__item .gallery__title {
@@ -119,9 +119,9 @@
   margin-top: 15px;
 
   background-color: lightgrey;
-  background-image: url(../img/photo-roads-mobile@1x.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 0;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/photo-roads-mobile@2x.jpg");
+  }
 }
 
 .gallery__item:nth-child(2) .gallery__title {
@@ -143,9 +143,9 @@
   margin-top: 15px;
 
   background-color: lightgrey;
-  background-image: url(../img/photo-bridge-mobile@1x.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 0;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/photo-bridge-mobile@2x.jpg");
+  }
 }
 
 .gallery__item:nth-child(3) .gallery__title {
@@ -262,7 +262,9 @@
     min-height: 267px;
 
     margin-top: 0px;
-    background-image: url(../img/photo-cactus-tablet@1x.jpg);
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/photo-cactus-tablet@2x.jpg");
+    }
   }
 
   .gallery__item:nth-child(1) .gallery__button {
@@ -273,7 +275,9 @@
     width: 648px;
     min-height: 400px;
 
-    background-image: url(../img/photo-sunset-tablet@1x.jpg);
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/photo-sunset-tablet@2x.jpg");
+    }
   }
 
   .gallery__item:nth-child(2) .gallery__image {
@@ -282,7 +286,9 @@
 
     margin-top: 0px;
 
-    background-image: url(../img/photo-roads-tablet@1x.jpg);
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/photo-roads-tablet@2x.jpg");
+  }
   }
 
   .gallery__item:nth-child(3) .gallery__image {
@@ -290,7 +296,9 @@
     min-height: 267px;
 
     margin-top: 0px;
-    background-image: url(../img/photo-bridge-tablet@1x.jpg);
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/photo-bridge-tablet@2x.jpg");
+    }
   }
 
   .gallery__item:nth-child(3) .gallery__button {
@@ -407,28 +415,36 @@
     width: 400px;
     min-height: 267px;
 
-    background-image: url(../img/photo-cactus-desktop@1x.jpg);
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/photo-cactus-desktop@2x.jpg");
+    }
   }
 
   .gallery>.gallery__item .gallery__image {
     width: 1200px;
     min-height: 400px;
 
-    background-image: url(../img/photo-sunset-desktop@1x.jpg);
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/photo-sunset-desktop@2x.jpg");
+    }
   }
 
   .gallery__item:nth-child(2) .gallery__image {
     width: 400px;
     min-height: 267px;
 
-    background-image: url(../img/photo-roads-desktop@1x.jpg);
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/photo-roads-desktop@2x.jpg");
+    }
   }
 
   .gallery__item:nth-child(3) .gallery__image {
     width: 400px;
     min-height: 267px;
 
-    background-image: url(../img/photo-bridge-desktop@1x.jpg);
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/photo-bridge-desktop@2x.jpg");
+    }
   }
 
 }
