@@ -11,15 +11,15 @@
 }
 
 .presentation__title::before {
-    content: "";
-    position: absolute;
-    width: 320px;
-    height: 1px;
-    background-color: @bg-input;
-    left: 50%;
-    margin-left: -160px;
-    margin-top: -23px;
-  }
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  background-color: @bg-input;
+  left: 50%;
+  margin-left: -160px;
+  margin-top: -33px;
+}
 
 .presentation__description {
   .no-margin-padding();
@@ -27,9 +27,10 @@
 
   width: 236px;
 
-  padding-bottom: 30px;
+  padding-bottom: 35px;
 
   font-size: 14px;
+  line-height: 24px;
 
   color: #333333;
 }
@@ -54,9 +55,6 @@
   min-height: 201px;
 
   background-color: lightgrey;
-  background-image: url(../img/video-mobile@1x.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 0;
 }
 
 .presentation__range {
@@ -111,43 +109,58 @@
   .button-reset();
 }
 
-.presentation__button--replay::before {
-  content: "";
+.presentation__button--replay {
   position: absolute;
   width: 16px;
   height: 20px;
   top: 50%;
   left: 10%;
   margin-top: -10px;
-  background-image: url(../img/icon-video-replay.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
-.presentation__button--subtitles::before {
-  content: "";
+.presentation__button--replay:hover path {
+  fill: #333333;
+}
+
+.presentation__button--replay:active path,
+.presentation__button--replay:focus path {
+  opacity: 0.3;
+}
+
+.presentation__button--subtitles {
   position: absolute;
   width: 32px;
   height: 20px;
   top: 50%;
   left: 62%;
   margin-top: -10px;
-  background-image: url(../img/icon-video-subtitles.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
-.presentation__button--fullscreen::before {
-  content: "";
+.presentation__button--subtitles:hover path {
+  fill: #333333;
+}
+
+.presentation__button--subtitles:active path,
+.presentation__button--subtitles:focus path {
+  opacity: 0.3;
+}
+
+.presentation__button--fullscreen {
   position: absolute;
   width: 20px;
   height: 20px;
   top: 50%;
   left: 85%;
   margin-top: -10px;
-  background-image: url(../img/icon-video-fullscreen.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
+}
+
+.presentation__button--fullscreen:hover polygon {
+  fill: #333333;
+}
+
+.presentation__button--fullscreen:active polygon,
+.presentation__button--fullscreen:focus polygon {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
@@ -165,7 +178,7 @@
   }
 
   .presentation__description {
-    width: 415px;
+    width: 420px;
 
     padding-bottom: 73px;
 
@@ -190,8 +203,6 @@
   .presentation__image {
     width: 648px;
     height: 499px;
-
-    background-image: url(../img/video-tablet@1x.jpg);
   }
 
   .presentation__range {
@@ -231,27 +242,65 @@
     background-color: transparent;
   }
 
-  .presentation__button--replay::before {
+  .presentation__button--replay {
     top: 50%;
     left: 5%;
     margin-top: -25px;
-    margin-left: 5px;
-    background-image: url(../img/icon-video-replay-white.svg);
+    fill: white;
   }
 
-  .presentation__button--subtitles::before {
+  .presentation__button--replay:hover path {
+    fill: white;
+    opacity: 0.6;
+  }
+
+  .presentation__button--replay:active path,
+  .presentation__button--replay:focus path {
+    fill: white;
+    opacity: 0.3;
+  }
+
+  .presentation__button--subtitles {
     top: 50%;
     left: 81%;
     margin-top: -24px;
-    background-image: url(../img/icon-video-subtitles-white.svg);
   }
 
-  .presentation__button--fullscreen::before {
+  .presentation__button--subtitles path {
+    fill: white;
+  }
+
+  .presentation__button--subtitles:hover path {
+    fill: white;
+    opacity: 0.6;
+  }
+
+  .presentation__button--subtitles:active path,
+  .presentation__button--subtitles:focus path {
+    fill: white;
+    opacity: 0.3;
+  }
+
+  .presentation__button--fullscreen {
     top: 50%;
     left: 91%;
     margin-top: -23px;
     margin-left: -3px;
-    background-image: url(../img/icon-video-fullscreen-white.svg);
+  }
+
+  .presentation__button--fullscreen polygon {
+    fill: white;
+  }
+
+  .presentation__button--fullscreen:hover polygon {
+    fill: white;
+    opacity: 0.6;
+  }
+
+  .presentation__button--fullscreen:active polygon,
+  .presentation__button--fullscreen:focus polygon {
+    fill: white;
+    opacity: 0.3;
   }
 }
 
@@ -262,13 +311,7 @@
 
   .presentation__image {
     width: 800px;
-  }
-
-  .presentation__image {
-    width: 800px;
     height: 499px;
-
-    background-image: url(../img/video-desktop@1x.jpg);
   }
 
   .presentation__range {
@@ -301,19 +344,19 @@
     left: 25%;
   }
 
-  .presentation__button--replay::before {
+  .presentation__button--replay {
     left: 4%;
 
     margin-left: 0px;
   }
 
-  .presentation__button--subtitles::before {
+  .presentation__button--subtitles {
     left: 84%;
 
     margin-left: 2px;
   }
 
-  .presentation__button--fullscreen::before {
+  .presentation__button--fullscreen {
     left: 92%;
 
     margin-left: 2px;

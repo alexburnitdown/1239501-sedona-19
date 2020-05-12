@@ -51,7 +51,7 @@
   vertical-align:bottom
 }
 
-.gallery__image::before {
+.gallery__item::before {
     content: "";
     position: absolute;
     width: 320px;
@@ -59,6 +59,10 @@
     background-color: @bg-input;
     left: 50%;
     margin-left: -160px;
+    margin-top: -9px;
+  }
+
+.gallery>.gallery__item::before {
     margin-top: -23px;
   }
 
@@ -73,9 +77,6 @@
   margin-top: 15px;
 
   background-color: lightgrey;
-  background-image: url(../img/photo-cactus-mobile@1x.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 0;
 }
 
 .gallery__item:nth-child(1) .gallery__title {
@@ -95,9 +96,6 @@
   min-height: 280px;
 
   background-color: lightgrey;
-  background-image: url(../img/photo-sunset-mobile@1x.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 0;
 }
 
 .gallery>.gallery__item .gallery__title {
@@ -119,9 +117,6 @@
   margin-top: 15px;
 
   background-color: lightgrey;
-  background-image: url(../img/photo-roads-mobile@1x.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 0;
 }
 
 .gallery__item:nth-child(2) .gallery__title {
@@ -143,9 +138,6 @@
   margin-top: 15px;
 
   background-color: lightgrey;
-  background-image: url(../img/photo-bridge-mobile@1x.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 0;
 }
 
 .gallery__item:nth-child(3) .gallery__title {
@@ -262,7 +254,6 @@
     min-height: 267px;
 
     margin-top: 0px;
-    background-image: url(../img/photo-cactus-tablet@1x.jpg);
   }
 
   .gallery__item:nth-child(1) .gallery__button {
@@ -272,8 +263,6 @@
   .gallery>.gallery__item .gallery__image {
     width: 648px;
     min-height: 400px;
-
-    background-image: url(../img/photo-sunset-tablet@1x.jpg);
   }
 
   .gallery__item:nth-child(2) .gallery__image {
@@ -281,8 +270,6 @@
     min-height: 267px;
 
     margin-top: 0px;
-
-    background-image: url(../img/photo-roads-tablet@1x.jpg);
   }
 
   .gallery__item:nth-child(3) .gallery__image {
@@ -290,7 +277,6 @@
     min-height: 267px;
 
     margin-top: 0px;
-    background-image: url(../img/photo-bridge-tablet@1x.jpg);
   }
 
   .gallery__item:nth-child(3) .gallery__button {
@@ -323,31 +309,25 @@
     height: 20px;
     top: 100%;
     margin-top: -80px;
-    background-color: black;
-    opacity: 0.3;
-    outline: 2px solid red;
-    z-index: 95;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .gallery__item:not(:first-child):nth-child(2n) .gallery__wrapper {
-    background-color: black;
-    opacity: 0.3;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .gallery__title {
     position: absolute;
     color: white;
-    opacity: 1;
-    z-index: 98;
-    top: 10%;
+    top: 8%;
+    margin-left: 2px;
   }
 
   .gallery__author {
     padding-bottom: 0px;
     position: absolute;
     color: white;
-    opacity: 1;
-    z-index: 100;
+    margin-top: -1px;
   }
 
   .gallery__likes {
@@ -357,6 +337,8 @@
     z-index: 99;
     top: 40%;
     left: 87%;
+    margin-top: -3px;
+    margin-left: -1px;
   }
 
   .gallery__button {
@@ -366,15 +348,14 @@
 
     width: 23px;
     height: 21px;
-    top: 0;
-    left: 0;
-    margin-left: 0px;
-    margin-right: 14px;
+    top: 50%;
+    left: 80%;
+    margin-left: -4px;
+    margin-top: -10px;
+
     background-image: url(../img/icon-like-white.svg);
     background-repeat: no-repeat;
     opacity: 1;
-    outline: 3px solid red;
-    z-index: 100;
   }
 
   .gallery__image {
@@ -392,7 +373,13 @@
   }
 
   .gallery>.gallery__item .gallery__likes {
-    left: 96%;
+    left: 95%;
+    margin-left: 3px;
+  }
+
+  .gallery>.gallery__item .gallery__button {
+    left: 93%;
+    margin-left: 0px;
   }
 
   .gallery>.gallery__item .gallery__wrapper {
@@ -400,37 +387,25 @@
     width: 1200px;
     top: 100%;
     margin-top: -80px;
-    background-color: black;
-    opacity: 0.3;
-    z-index: 10;
   }
 
   .gallery__item:nth-child(1) .gallery__image {
     width: 400px;
     min-height: 267px;
-
-    background-image: url(../img/photo-cactus-desktop@1x.jpg);
   }
 
   .gallery>.gallery__item .gallery__image {
     width: 1200px;
     min-height: 400px;
-
-    background-image: url(../img/photo-sunset-desktop@1x.jpg);
   }
 
   .gallery__item:nth-child(2) .gallery__image {
     width: 400px;
     min-height: 267px;
-
-    background-image: url(../img/photo-roads-desktop@1x.jpg);
   }
 
   .gallery__item:nth-child(3) .gallery__image {
     width: 400px;
     min-height: 267px;
-
-    background-image: url(../img/photo-bridge-desktop@1x.jpg);
   }
-
 }

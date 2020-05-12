@@ -38,8 +38,12 @@
 <body>
   <header class="page-header">
     <nav class="main-nav">
-      <a href="#" class="main-nav__logo">
-        <p class="main-nav__logo-image"></p>
+     <a href="#" class="main-nav__logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="город Седона">
+        </picture>
       </a>
       <svg class="main-nav__close" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
       <polygon fill="#ffffff" points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
@@ -148,17 +152,17 @@
     </div>
   </footer>
 
-  <section class="form-modal form-modal__error">
-    <h3 class="form-modal__title">Что-то пошло не так!</h3>
-    <p class="form-modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="form-modal__button" type="button">Ок</button>
+  <section class="form-modal form-modal--error">
+    <h3 class="form-modal__title form-modal__title--error">Что-то пошло не так!</h3>
+    <p class="form-modal__description form-modal__description--error">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="form-modal__button form-modal__button--error" type="button">Ок</button>
   </section>
 
-  <section class="form-modal form-modal__success">
-    <h3 class="form-modal__title">Ваш отзыв отправлен!</h3>
-    <p class="form-modal__description">Спасибо за ваше участие. Ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+  <section class="form-modal form-modal--success">
+    <h3 class="form-modal__title form-modal__title--success">Ваш отзыв отправлен!</h3>
+    <p class="form-modal__description form-modal__description--success">Спасибо за ваше участие. Ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
     <div class="form-modal__wrapper">
-      <button class="form-modal__button" type="button">Закрыть окно</button>
+      <button class="form-modal__button form-modal__button--success" type="button">Закрыть окно</button>
     </div>
   </section>
 

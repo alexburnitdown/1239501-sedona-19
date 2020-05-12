@@ -3,16 +3,21 @@
   .container ();
 
   width: 320px;
+
+  background-color: lightgrey;
+  background-image: url("../img/bg-back-mobile.jpg");
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .page-main__picture--index {
   position: relative;
   min-height: 389px;
 
-  background-color: lightgrey;
-  background-image: url(../img/bg-back-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: 50% 30%;
+  background-size: 250%;
 }
 
 .page-main__picture--index::before {
@@ -42,18 +47,14 @@
 
   background-image: url(../img/bg-intro-triangle-mobile.svg);
   background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: contain;
 }
 
 .page-main__picture--photo {
   position: relative;
-  height: 162px;
+  height: 160px;
 
-  background-color: lightgrey;
-  background-image: url(../img/bg-back-mobile.jpg);
-  background-repeat: no-repeat;
   background-position: 50% 100%;
+  background-size: 250%;
 }
 
 .page-main__picture--photo::before {
@@ -63,7 +64,7 @@
   height: 39px;
   top: 50%;
   left: 50%;
-  margin-top: -30px;
+  margin-top: -28px;
   margin-left: -115px;
 
   background-image: url(../img/text-sedona.svg);
@@ -76,10 +77,8 @@
   position: relative;
   height: 159px;
 
-  background-color: lightgrey;
-  background-image: url(../img/bg-back-mobile.jpg);
-  background-repeat: no-repeat;
   background-position: 50% 100%;
+  background-size: 250%;
 }
 
 .page-main__picture--form::before {
@@ -89,7 +88,7 @@
   height: 39px;
   top: 50%;
   left: 50%;
-  margin-top: -30px;
+  margin-top: -28px;
   margin-left: -115px;
 
   background-image: url(../img/text-sedona.svg);
@@ -110,7 +109,7 @@
 }
 
 .page-main__title--photo {
-  margin-top: 35px;
+  margin-top: 37px;
 }
 
 .page-main__title--form {
@@ -150,6 +149,13 @@
     background-image: url(../img/bg-back-tablet@1x.jpg);
     background-repeat: no-repeat;
     background-position: 50% 100%;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  .page-main__picture--index {
+    background-size: 100%;
   }
 
   .page-main__picture--index::before {
@@ -178,11 +184,7 @@
   .page-main__picture--photo {
     width: 768px;
     min-height: 290px;
-
-    background-color: lightgrey;
-    background-image: url(../img/bg-back-tablet@1x.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
+    background-size: 100%;
   }
 
   .page-main__picture--photo::before {
@@ -199,11 +201,7 @@
   .page-main__picture--form {
     width: 768px;
     min-height: 290px;
-
-    background-color: lightgrey;
-    background-image: url(../img/bg-back-tablet@1x.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
+    background-size: 100%;
   }
 
   .page-main__picture--form::before {
@@ -213,7 +211,7 @@
     height: 80px;
     top: 50%;
     left: 50%;
-    margin-left: -228px;
+    margin-left: -230px;
     margin-top: -50px;
 
     background-image: url(../img/text-sedona.svg);
@@ -256,7 +254,7 @@
   }
 
   .page-main__description {
-    width: 490px;
+    width: 500px;
     min-width: 428px;
     margin-bottom: 50px;
 
@@ -284,6 +282,9 @@
     background-image: url(../img/bg-back-desktop@1x.jpg);
     background-repeat: no-repeat;
     background-position: 50% 100%;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .page-main__picture::after {
@@ -297,21 +298,11 @@
   .page-main__picture--photo {
     width: 1200px;
     min-height: 300px;
-
-    background-color: lightgrey;
-    background-image: url(../img/bg-back-desktop@1x.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
   }
 
   .page-main__picture--form {
     width: 1200px;
     min-height: 300px;
-
-    background-color: lightgrey;
-    background-image: url(../img/bg-back-desktop@1x.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
   }
 
   .page-main__title {
