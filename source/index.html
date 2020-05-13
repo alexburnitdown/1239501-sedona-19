@@ -36,6 +36,11 @@
 </head>
 
 <body>
+  <svg style="display:none">
+  <symbol viewBox="0 0 22.199 22.199" id="icon-close">
+    <polygon fill="#ffffff" points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
+  </symbol>
+  </svg>
   <header class="page-header">
     <nav class="main-nav">
       <a href="#" class="main-nav__logo">
@@ -45,14 +50,12 @@
           <img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="город Седона">
         </picture>
       </a>
-      <svg class="main-nav__close" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
-      <polygon fill="#ffffff" points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
-      </svg>
+       <svg class="main-nav__close" width="23" height="23"><use xlink:href="#icon-close"></use></svg>
       <div class="main-nav__list site-list">
         <a class="site-list__link" href="#">Главная</a>
         <a class="site-list__link" href="photo.html">Фото и видео</a>
         <a class="site-list__link" href="form.html">Форма отзыва</a>
-        <a class="site-list__link" href="#">HTML Academy</a></li>
+        <a class="site-list__link" href="#">HTML Academy</a>
       </div>
       <p class="main-nav__toggle-wrapper"><button type="button" class="main-nav__toggle"></button></p>
     </nav>
