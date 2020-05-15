@@ -5,6 +5,8 @@ var popupError = document.querySelector(".form-modal--error");
 var popupErrorClose = popupError.querySelector(".form-modal__button--error");
 var popupSuccess = document.querySelector(".form-modal--success");
 var popupSuccessClose = popupSuccess.querySelector(".form-modal__button--success");
+var phone = document.querySelector("[name=form-phone]");
+var email = document.querySelector("[name=form-email]");
 
 if ()
 
