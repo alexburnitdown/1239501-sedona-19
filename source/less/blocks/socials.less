@@ -53,12 +53,13 @@
   margin-top: 17px;
 }
 
-.socials__item--twitter:active::before,
-.socials__item--facebook:active::before,
-.socials__item--youtube:active::before,
-.socials__item--twitter:focus::before,
-.socials__item--facebook:focus::before,
-.socials__item--youtube:focus::before {
+
+.socials__item:active .socials__item--twitter,
+.socials__item:focus .socials__item--twitter,
+.socials__item:active .socials__item--facebook,
+.socials__item:focus .socials__item--facebook,
+.socials__item:active .socials__item--youtube,
+.socials__item:focus .socials__item--youtube, {
   opacity: 0.3;
 }
 
