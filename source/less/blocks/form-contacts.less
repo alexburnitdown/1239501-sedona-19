@@ -81,6 +81,7 @@
   width: 280px;
   height: 150px;
   padding-top: 13px;
+  padding-right: 33px;
   box-sizing: border-box;
 
   background-color: @bg-input;
@@ -110,10 +111,11 @@
 .form-contacts__text::placeholder {
   padding-left: 18px;
 
-  font-size: 17px;
+  font-size: 17.5px;
   font-weight: 700;
   color: black;
   line-height: 26px;
+  letter-spacing: -0.6px;
 }
 
 .form-contacts__button {
@@ -151,6 +153,10 @@
 
 .form-contacts__fieldset:nth-child(1) {
   padding-bottom: 20px;
+}
+
+.form-contacts__fieldset:nth-child(1) .form-contacts__title {
+  letter-spacing: 0.4px;
 }
 
 .form-contacts__fieldset:nth-child(1) .form-contacts__input {
@@ -198,11 +204,17 @@
   margin-left: 22px;
 }
 
-.form-contacts__input--phone,
+.form-contacts__input--phone {
+  width: 212px;
+  padding-left: 10px;
+  padding-top: 1px;
+  letter-spacing: -0.1px;
+}
+
 .form-contacts__input--email {
   width: 212px;
   padding-left: 10px;
-  padding-top: 0px;
+  margin-top: -1px;
 }
 
 .form-contacts__fieldset:nth-child(2) .form-contacts__icon--phone::before {
@@ -912,7 +924,7 @@ input[type="checkbox"]:checked:focus + .form-contacts__label::before {
   .form-contacts__fieldset:nth-child(2) .form-contacts__wrapper-outside {
     display: flex;
     width: 955px;
-    align-items: top;
+    align-items: start;
   }
 
   .form-contacts__label-phone {

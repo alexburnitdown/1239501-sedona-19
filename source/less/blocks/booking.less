@@ -8,7 +8,7 @@
   .container ();
 
   width: 280px;
-  padding-top: 31px;
+  padding-top: 29px;
 }
 
 .booking__title {
@@ -17,6 +17,10 @@
   padding-bottom: 20px;
 
   font-size: 21px;
+}
+
+.booking__br {
+  display: none;
 }
 
 .booking__description {
@@ -32,6 +36,8 @@
   display: block;
   min-height: 58px;
   margin-bottom: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
 
   border: none;
   outline: none;
@@ -75,7 +81,7 @@
   width: 27px;
   min-height: 27px;
   left: 50%;
-  margin-top: 155px;
+  margin-top: 160px;
   margin-left: -15px;
 
   background-image: url(../img/icon-map-marker.svg);
@@ -90,24 +96,30 @@
     .container ();
 
     width: 458px;
-    padding-top: 35px;
+    padding-top: 33px;
   }
 
   .booking__title {
     margin-top: 20px;
-    margin-bottom: 13px;
+    margin-bottom: 11px;
 
     font-size: 30px;
   }
 
+  .booking__br {
+    display: inline;
+  }
+
   .booking__description {
     .no-margin-padding();
+
     width: 440px;
-    padding-bottom: 38px;
+    padding-bottom: 42px;
+    padding-left: 8px;
   }
 
   .booking__button{
-  width: 458px;
+    width: 438px;
 
     margin-bottom: 57px;
   }
@@ -115,6 +127,10 @@
   .booking__map-image {
     width: 768px;
     height: 350px;
+  }
+
+  .booking__map::before {
+    margin-top: 165px;
   }
 }
 
@@ -124,7 +140,7 @@
   }
 
   .booking__title {
-    margin-top: 17px;
+    margin-top: 22px;
 
     font-size: 30px;
   }
@@ -133,7 +149,7 @@
     width: 440px;
 
     margin-top: 7px;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
   }
 
   .booking__button{
@@ -142,5 +158,9 @@
 
   .booking__map-image {
     width: 1200px;
+  }
+
+  .booking__map::before {
+    margin-top: 162px;
   }
 }

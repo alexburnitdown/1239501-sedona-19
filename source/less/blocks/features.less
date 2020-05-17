@@ -21,6 +21,8 @@
   .container();
 
   padding-top: 33px;
+  padding-right: 10px;
+  padding-left: 10px;
 
   font-size: 18px;
 }
@@ -108,7 +110,8 @@
 
   position: relative;
   width: 320px;
-  height: 259px;
+  min-height: 260px;
+  object-fit: cover;
 
   background-color: lightgrey;
 }
@@ -120,6 +123,7 @@
   position: relative;
   width: 320px;
   min-height: 260px;
+  object-fit: cover;
 
   background-color: lightgrey;
 }
@@ -168,9 +172,16 @@
   margin-top: -27px;
 }
 
+.features>.features__item:nth-child(3) .features__title::before {
+  .visually-hidden();
+}
+
+.features__item .features__title {
+  padding-bottom: 3px;
+}
+
 .features__item:nth-child(1) .features__title {
   padding-top: 27px;
-  padding-bottom: 0px;
 }
 
 .features__item:nth-child(1) .features__description {
@@ -181,7 +192,7 @@
   padding-top: 2px;
   padding-bottom: 20px;
 
-  line-height: 22px;
+  line-height: 21px;
   color: #333333;
 }
 
@@ -192,7 +203,7 @@
 
   padding-bottom: 22px;
 
-  line-height: 22px;
+  line-height: 21px;
   color: #333333;
 }
 
@@ -203,7 +214,7 @@
 
   padding-bottom: 25px;
 
-  line-height: 22px;
+  line-height: 21px;
   color: #333333;
 }
 
@@ -359,7 +370,7 @@
   .features__item {
     .container();
 
-    width: 1200;
+    width: 1200px;
   }
 
   .features__wrapper {
@@ -402,6 +413,7 @@
     width: 162px;
     padding: 0px;
     padding-top: 5px;
+
   }
 
   .features>.features__item:nth-child(1) .features__number {
@@ -425,7 +437,6 @@
     .no-margin-padding();
 
     min-height: 256px;
-    outline: 1px solid red;
   }
 
   .features>.features__item:nth-child(3) .features__title-wrapper {
@@ -433,8 +444,8 @@
   }
 
   .features>.features__item:nth-child(3) .features__title {
-    margin-top: 50px;
-    margin-bottom: 5px;
+    margin-top: 53px;
+    margin-bottom: 3px;
   }
 
   .features>.features__item:nth-child(3) .features__image {
@@ -456,14 +467,17 @@
 
   .features__item:nth-child(1) .features__title {
     margin-bottom: 2px;
+    padding-top: 45px;
   }
 
   .features__item:nth-child(2) .features__title {
     margin-bottom: 2px;
+    padding-top: 45px;
   }
 
   .features__item:nth-child(3) .features__title {
     margin-bottom: 2px;
+    padding-top: 45px;
   }
 
   .features__item:nth-child(1) .features__description {
