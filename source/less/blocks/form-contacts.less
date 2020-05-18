@@ -349,17 +349,15 @@ input[type="radio"]:hover + .form-contacts__label::before {
   background-image: url(../img/radio-hover-off.png);
 }
 
-input[type="radio"]:active + .form-contacts__label::before,
-input[type="radio"]:focus + .form-contacts__label::before {
-  background-image: url(../img/radio-active-off.png);
-}
-
 input[type="radio"]:checked:hover + .form-contacts__label::before {
   background-image: url(../img/radio-hover-on.png);
 }
 
-input[type="radio"]:checked:active + .form-contacts__label::before,
-input[type="radio"]:checked:focus + .form-contacts__label::before {
+input[type="radio"]:active + .form-contacts__label::before {
+  background-image: url(../img/radio-active-off.png);
+}
+
+input[type="radio"]:checked:active + .form-contacts__label::before {
   background-image: url(../img/radio-active-on.png);
 }
 
@@ -388,8 +386,7 @@ input[type="checkbox"]:hover + .form-contacts__label::before {
   background-image: url(../img/checkbox-hover-off.png);
 }
 
-input[type="checkbox"]:active + .form-contacts__label::before,
-input[type="checkbox"]:focus + .form-contacts__label::before {
+input[type="checkbox"]:active + .form-contacts__label::before {
   background-image: url(../img/checkbox-active-off.png);
 }
 
@@ -397,8 +394,7 @@ input[type="checkbox"]:checked:hover + .form-contacts__label::before {
   background-image: url(../img/checkbox-hover-on.png);
 }
 
-input[type="checkbox"]:checked:active + .form-contacts__label::before,
-input[type="checkbox"]:checked:focus + .form-contacts__label::before {
+input[type="checkbox"]:checked:active + .form-contacts__label::before {
   background-image: url(../img/checkbox-active-on.png);
 }
 
