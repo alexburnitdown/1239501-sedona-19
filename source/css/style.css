@@ -385,7 +385,8 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 100vw;
+  display: block;
+  width: 100%;
   height: 350px;
   background-color: lightgrey;
   vertical-align: bottom;
@@ -436,7 +437,8 @@ img {
     margin-bottom: 57px;
   }
   .booking__map-image {
-    width: 100vw;
+    display: block;
+    width: 100%;
     height: 350px;
     background-image: url("../img/bg-map-tablet@1x.jpg");
   }
@@ -466,7 +468,8 @@ img {
     margin-bottom: 65px;
   }
   .booking__map-image {
-    width: 100vw;
+    display: block;
+    width: 100%;
     background-image: url("../img/bg-map-desktop@1x.jpg");
   }
   .booking__map::before {
@@ -972,6 +975,7 @@ img {
 }
 .form-contacts__input:hover {
   background-color: #e5e5e5;
+  border-color: #e5e5e5;
 }
 .form-contacts__input:focus,
 .form-contacts__input:active {
@@ -1014,35 +1018,35 @@ img {
   border: 4px solid #e5e5e5;
 }
 .form-contacts__input::-webkit-input-placeholder {
-  padding-left: 10px;
+  padding-left: 5px;
   padding-right: 23px;
   font-weight: bold;
   font-size: 10px;
   color: black;
 }
 .form-contacts__input::-moz-placeholder {
-  padding-left: 10px;
+  padding-left: 5px;
   padding-right: 23px;
   font-weight: bold;
   font-size: 10px;
   color: black;
 }
 .form-contacts__input:-ms-input-placeholder {
-  padding-left: 10px;
+  padding-left: 5px;
   padding-right: 23px;
   font-weight: bold;
   font-size: 10px;
   color: black;
 }
 .form-contacts__input::-ms-input-placeholder {
-  padding-left: 10px;
+  padding-left: 5px;
   padding-right: 23px;
   font-weight: bold;
   font-size: 10px;
   color: black;
 }
 .form-contacts__input::placeholder {
-  padding-left: 10px;
+  padding-left: 5px;
   padding-right: 23px;
   font-weight: bold;
   font-size: 10px;
@@ -1051,6 +1055,7 @@ img {
 .form-contacts__text::-webkit-input-placeholder {
   font-size: 17.5px;
   font-weight: 700;
+  padding-left: 5px;
   color: black;
   line-height: 26px;
   letter-spacing: -0.6px;
@@ -1058,6 +1063,7 @@ img {
 .form-contacts__text::-moz-placeholder {
   font-size: 17.5px;
   font-weight: 700;
+  padding-left: 5px;
   color: black;
   line-height: 26px;
   letter-spacing: -0.6px;
@@ -1065,6 +1071,7 @@ img {
 .form-contacts__text:-ms-input-placeholder {
   font-size: 17.5px;
   font-weight: 700;
+  padding-left: 5px;
   color: black;
   line-height: 26px;
   letter-spacing: -0.6px;
@@ -1072,6 +1079,7 @@ img {
 .form-contacts__text::-ms-input-placeholder {
   font-size: 17.5px;
   font-weight: 700;
+  padding-left: 5px;
   color: black;
   line-height: 26px;
   letter-spacing: -0.6px;
@@ -1079,6 +1087,7 @@ img {
 .form-contacts__text::placeholder {
   font-size: 17.5px;
   font-weight: 700;
+  padding-left: 5px;
   color: black;
   line-height: 26px;
   letter-spacing: -0.6px;
@@ -1182,13 +1191,13 @@ img {
   margin-left: 22px;
 }
 .form-contacts__input--phone {
-  width: 212px;
+  width: 220px;
   padding-left: 10px;
   padding-top: 1px;
   letter-spacing: -0.1px;
 }
 .form-contacts__input--email {
-  width: 212px;
+  width: 220px;
   padding-left: 10px;
   margin-top: -1px;
 }
@@ -1642,27 +1651,27 @@ input[type="checkbox"]:checked:active + .form-contacts__label::before {
     list-style: none;
     width: 648px;
     min-height: 150px;
-    padding-top: 14px;
-    padding-left: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
   }
   .form-contacts__text::-webkit-input-placeholder {
-    letter-spacing: -0.5px;
+    letter-spacing: -1px;
     font-size: 18px;
   }
   .form-contacts__text::-moz-placeholder {
-    letter-spacing: -0.5px;
+    letter-spacing: -1px;
     font-size: 18px;
   }
   .form-contacts__text:-ms-input-placeholder {
-    letter-spacing: -0.5px;
+    letter-spacing: -1px;
     font-size: 18px;
   }
   .form-contacts__text::-ms-input-placeholder {
-    letter-spacing: -0.5px;
+    letter-spacing: -1px;
     font-size: 18px;
   }
   .form-contacts__text::placeholder {
-    letter-spacing: -0.5px;
+    letter-spacing: -1px;
     font-size: 18px;
   }
   .form-contacts > .form-contacts__wrapper {
@@ -1935,7 +1944,7 @@ input[type="checkbox"]:checked:active + .form-contacts__label::before {
   .form-contacts__text {
     width: 951px;
     height: 160px;
-    padding-left: 0px;
+    padding-left: 7px;
   }
   .form-contacts__text::-webkit-input-placeholder {
     letter-spacing: -0.5px;
