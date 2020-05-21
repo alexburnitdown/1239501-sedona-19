@@ -1,4 +1,3 @@
-var menuClose = document.querySelector(".main-nav__close");
 var popupError = document.querySelector(".form-modal--error");
 var popupErrorClose = popupError.querySelector(".form-modal__button--error");
 var popupSuccess = document.querySelector(".form-modal--success");
@@ -6,8 +5,6 @@ var popupSuccessClose = popupSuccess.querySelector(".form-modal__button--success
 var phone = document.querySelector("[name=form-phone]");
 var email = document.querySelector("[name=form-email]");
 var form = document.querySelector(".form-contacts");
-var menu = document.querySelector(".main-nav__list");
-var burger = document.querySelector(".main-nav__toggle");
 
 form.addEventListener("submit", function(evt) {
   if (!phone.value || !email.value) {
@@ -37,16 +34,4 @@ window.addEventListener("keydown", function(evt) {
       popupSuccess.classList.remove("form-modal__show");
     }
   }
-});
-
-menuClose.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  menu.classList.add("site-list__hide");
-  burger.classList.add("form-modal__show");
-});
-
-burger.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  menu.classList.remove("site-list__hide");
-  burger.classList.remove("form-modal__show");
 });

@@ -107,48 +107,40 @@
 
 .presentation__button {
   .button-reset();
+
+  display: block;
+  width: 32px;
+  height: 20px;
 }
 
 .presentation__button--replay {
   position: absolute;
   width: 16px;
-  height: 20px;
   top: 50%;
   left: 10%;
   margin-top: -10px;
 }
 
-.presentation__button--replay:hover path {
+.presentation__button:hover path,
+.presentation__button:hover polygon {
   fill: #333333;
 }
 
-.presentation__button--replay:active path,
-.presentation__button--replay:focus path {
+.presentation__button:active path,
+.presentation__button:focus path {
   opacity: 0.3;
 }
 
 .presentation__button--subtitles {
   position: absolute;
-  width: 32px;
-  height: 20px;
   top: 50%;
   left: 62%;
   margin-top: -10px;
 }
 
-.presentation__button--subtitles:hover path {
-  fill: #333333;
-}
-
-.presentation__button--subtitles:active path,
-.presentation__button--subtitles:focus path {
-  opacity: 0.3;
-}
-
 .presentation__button--fullscreen {
   position: absolute;
   width: 20px;
-  height: 20px;
   top: 50%;
   left: 85%;
   margin-top: -10px;

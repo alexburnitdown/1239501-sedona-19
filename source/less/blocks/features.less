@@ -46,21 +46,22 @@
   color: white;
 }
 
-.features__number::before,
+.features__number::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background-color: black;
+  margin-top: 11px;
+  margin-left: -15px;
+}
+
 .features__number::after {
   content: "";
   position: absolute;
   width: 10px;
   height: 2px;
   background-color: black;
-}
-
-.features__number::before {
-  margin-top: 11px;
-  margin-left: -15px;
-}
-
-.features__number::after {
   margin-top: 11px;
   margin-left: 6px;
 }
