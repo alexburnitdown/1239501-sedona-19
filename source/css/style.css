@@ -385,8 +385,7 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: block;
-  width: 100%;
+  width: 100vw;
   height: 350px;
   background-color: lightgrey;
   vertical-align: bottom;
@@ -437,8 +436,7 @@ img {
     margin-bottom: 57px;
   }
   .booking__map-image {
-    display: block;
-    width: 100%;
+    width: 768px;
     height: 350px;
     background-image: url("../img/bg-map-tablet@1x.jpg");
   }
@@ -468,8 +466,7 @@ img {
     margin-bottom: 65px;
   }
   .booking__map-image {
-    display: block;
-    width: 100%;
+    width: 1200px;
     background-image: url("../img/bg-map-desktop@1x.jpg");
   }
   .booking__map::before {
@@ -1275,9 +1272,7 @@ img {
   padding-bottom: 15px;
 }
 .form-contacts__fieldset:nth-child(4) .form-contacts__input {
-  width: 46px;
-  height: 46px;
-  margin-right: 29px;
+  display: none;
 }
 .form-contacts__fieldset:nth-child(4) .form-contacts__label {
   font-weight: bold;
@@ -1363,7 +1358,6 @@ input[type="checkbox"]:checked + .form-contacts__label::after {
   background-image: url(../img/icon-tick.svg);
   background-repeat: no-repeat;
   cursor: pointer;
-  outline: 1px solid red;
 }
 input[type="checkbox"]:hover + .form-contacts__label::before {
   background-color: #e5e5e5;
@@ -1609,7 +1603,6 @@ input[type="checkbox"]:checked:active + .form-contacts__label::after {
         flex-wrap: wrap;
     width: 464px;
     padding-left: 2px;
-    outline: 1px solid red;
   }
   .form-contacts__fieldset:nth-child(4) .form-contacts__wrapper {
     width: 205px;
@@ -1703,8 +1696,8 @@ input[type="checkbox"]:checked:active + .form-contacts__label::after {
         -ms-flex-align: center;
             align-items: center;
     width: 648px;
-    min-height: 58px;
-    margin-top: 58px;
+    height: 58px;
+    padding-top: 58px;
     -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
             order: 5;
@@ -2583,10 +2576,10 @@ input[type="checkbox"]:checked:active + .form-contacts__label::after {
   height: 50px;
   top: 0%;
   left: 100%;
-  margin-left: -35px;
+  margin-left: -37px;
   margin-top: -10px;
 }
-.page-footer__icon:hover svg path {
+.page-footer__icon:hover path {
   fill: #81b3d2;
 }
 .page-footer__icon:active path,
@@ -2634,7 +2627,7 @@ input[type="checkbox"]:checked:active + .form-contacts__label::after {
 @media (min-width: 1200px) {
   .page-footer {
     width: 960px;
-    min-height: 120px;
+    height: 120px;
   }
   .page-footer--photo {
     margin-top: 87px;
@@ -2685,13 +2678,15 @@ input[type="checkbox"]:checked:active + .form-contacts__label::after {
 .page-main__picture::after {
   content: "";
   position: absolute;
-  width: 325px;
+  width: 101%;
   height: 26px;
   top: 100%;
   left: 0%;
   margin-top: -26px;
+  margin-left: -2px;
   background-image: url(../img/bg-intro-triangle-mobile.svg);
   background-repeat: no-repeat;
+  background-size: 100%;
 }
 .page-main__picture--photo {
   position: relative;
@@ -3026,34 +3021,41 @@ input[type="checkbox"]:checked:active + .form-contacts__label::after {
   color: inherit;
   background-color: transparent;
   cursor: pointer;
-  display: block;
-  width: 32px;
-  height: 20px;
 }
 .presentation__button--replay {
   position: absolute;
   width: 16px;
+  height: 20px;
   top: 50%;
   left: 10%;
   margin-top: -10px;
 }
-.presentation__button:hover path,
-.presentation__button:hover polygon {
+.presentation__button--replay:hover path {
   fill: #333333;
 }
-.presentation__button:active path,
-.presentation__button:focus path {
+.presentation__button--replay:active path,
+.presentation__button--replay:focus path {
   opacity: 0.3;
 }
 .presentation__button--subtitles {
   position: absolute;
+  width: 32px;
+  height: 20px;
   top: 50%;
   left: 62%;
   margin-top: -10px;
 }
+.presentation__button--subtitles:hover path {
+  fill: #333333;
+}
+.presentation__button--subtitles:active path,
+.presentation__button--subtitles:focus path {
+  opacity: 0.3;
+}
 .presentation__button--fullscreen {
   position: absolute;
   width: 20px;
+  height: 20px;
   top: 50%;
   left: 85%;
   margin-top: -10px;
@@ -3142,17 +3144,18 @@ input[type="checkbox"]:checked:active + .form-contacts__label::after {
     fill: white;
   }
   .presentation__button--replay:hover path {
-    color: rgba(255, 255, 255, 0.6);
+    fill: white;
+    opacity: 0.6;
   }
   .presentation__button--replay:active path,
   .presentation__button--replay:focus path {
-    color: rgba(255, 255, 255, 0.3);
+    fill: white;
+    opacity: 0.3;
   }
   .presentation__button--subtitles {
     top: 50%;
     left: 81%;
     margin-top: -24px;
-    fill: white;
   }
   .presentation__button--subtitles path {
     fill: white;
@@ -3171,9 +3174,8 @@ input[type="checkbox"]:checked:active + .form-contacts__label::after {
     left: 91%;
     margin-top: -23px;
     margin-left: -3px;
-    fill: white;
   }
-  .presentation__button--fullscreen g polygon {
+  .presentation__button--fullscreen polygon {
     fill: white;
   }
   .presentation__button--fullscreen:hover polygon {

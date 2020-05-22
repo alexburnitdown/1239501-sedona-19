@@ -306,10 +306,7 @@
 }
 
 .form-contacts__fieldset:nth-child(4) .form-contacts__input {
-  width: 46px;
-  height: 46px;
-
-  margin-right: 29px;
+  display: none;
 }
 
 .form-contacts__fieldset:nth-child(4) .form-contacts__label {
@@ -401,7 +398,6 @@ input[type="checkbox"]:checked + .form-contacts__label::after {
   background-image: url(../img/icon-tick.svg);
   background-repeat: no-repeat;
   cursor: pointer;
-  outline: 1px solid red;
 }
 
 input[type="checkbox"]:hover + .form-contacts__label::before {
@@ -658,7 +654,6 @@ input[type="checkbox"]:checked:active + .form-contacts__label::after {
     flex-wrap: wrap;
     width: 464px;
     padding-left: 2px;
-    outline: 1px solid red;
   }
 
   .form-contacts__fieldset:nth-child(4) .form-contacts__wrapper {
@@ -740,8 +735,8 @@ input[type="checkbox"]:checked:active + .form-contacts__label::after {
     align-items: center;
 
     width: 648px;
-    min-height: 58px;
-    margin-top: 58px;
+    height: 58px;
+    padding-top: 58px;
 
     order: 5;
   }

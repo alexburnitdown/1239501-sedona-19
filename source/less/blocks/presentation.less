@@ -1,3 +1,4 @@
+
 .presentation__title {
   .no-margin-padding();
   .container ();
@@ -107,40 +108,48 @@
 
 .presentation__button {
   .button-reset();
-
-  display: block;
-  width: 32px;
-  height: 20px;
 }
 
 .presentation__button--replay {
   position: absolute;
   width: 16px;
+  height: 20px;
   top: 50%;
   left: 10%;
   margin-top: -10px;
 }
 
-.presentation__button:hover path,
-.presentation__button:hover polygon {
+.presentation__button--replay:hover path {
   fill: #333333;
 }
 
-.presentation__button:active path,
-.presentation__button:focus path {
+.presentation__button--replay:active path,
+.presentation__button--replay:focus path {
   opacity: 0.3;
 }
 
 .presentation__button--subtitles {
   position: absolute;
+  width: 32px;
+  height: 20px;
   top: 50%;
   left: 62%;
   margin-top: -10px;
 }
 
+.presentation__button--subtitles:hover path {
+  fill: #333333;
+}
+
+.presentation__button--subtitles:active path,
+.presentation__button--subtitles:focus path {
+  opacity: 0.3;
+}
+
 .presentation__button--fullscreen {
   position: absolute;
   width: 20px;
+  height: 20px;
   top: 50%;
   left: 85%;
   margin-top: -10px;
@@ -242,20 +251,20 @@
   }
 
   .presentation__button--replay:hover path {
-    color: rgba(255, 255, 255, 0.6);
+    fill: white;
+    opacity: 0.6;
   }
 
   .presentation__button--replay:active path,
   .presentation__button--replay:focus path {
-
-    color: rgba(255, 255, 255, 0.3);
+    fill: white;
+    opacity: 0.3;
   }
 
   .presentation__button--subtitles {
     top: 50%;
     left: 81%;
     margin-top: -24px;
-    fill: white;
   }
 
   .presentation__button--subtitles path {
@@ -278,10 +287,9 @@
     left: 91%;
     margin-top: -23px;
     margin-left: -3px;
-    fill: white;
   }
 
-  .presentation__button--fullscreen g polygon {
+  .presentation__button--fullscreen polygon {
     fill: white;
   }
 
@@ -355,3 +363,4 @@
     margin-left: 2px;
   }
 }
+
