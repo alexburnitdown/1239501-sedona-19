@@ -1,6 +1,13 @@
 @media (min-width: @mobile-width) {
   .form-modal{
-    .modal();
+    display: none;
+    position: fixed;
+    background-color: white;
+    z-index: 1000;
+  }
+
+  .form-modal__show {
+    display: block;
   }
 
   .form-modal--error {

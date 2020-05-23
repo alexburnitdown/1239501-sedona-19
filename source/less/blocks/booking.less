@@ -64,29 +64,6 @@
   background-color: @bg-input-hover;
 }
 
-.booking__map-image {
-  .no-margin-padding();
-
-  background-color: lightgrey;
-  vertical-align: bottom;
-}
-
-.booking__map {
-  position: relative;
-}
-
-.booking__map::before {
-  content: "";
-  position: absolute;
-  width: 27px;
-  min-height: 27px;
-  left: 50%;
-  margin-top: 160px;
-  margin-left: -15px;
-
-  background-image: url(../img/icon-map-marker.svg);
-}
-
 @media (min-width: @tablet-width) {
   .booking {
     width: 768px;
@@ -123,15 +100,6 @@
 
     margin-bottom: 57px;
   }
-
-  .booking__map-image {
-    width: 768px;
-    height: 350px;
-  }
-
-  .booking__map::before {
-    margin-top: 165px;
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -154,13 +122,5 @@
 
   .booking__button{
     margin-bottom: 65px;
-  }
-
-  .booking__map-image {
-    width: 1200px;
-  }
-
-  .booking__map::before {
-    margin-top: 162px;
   }
 }

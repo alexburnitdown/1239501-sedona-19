@@ -6,10 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
+  <div style="display:none">
+<include src="build/img/sprite.svg"></include>
+</div>
   <header class="page-header">
     <nav class="main-nav">
      <a href="index.html" class="main-nav__logo">
@@ -19,9 +22,11 @@
           <img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="город Седона">
         </picture>
       </a>
-      <svg class="main-nav__close" width="23" height="23">
-        <use xlink:href="img/sprite.svg#icon-close"></use>
+      <button class="main-nav__close" type="button">
+         <svg  width="23" height="23" aria-label="Скрыть меню">
+        <use xlink:href="img/sprite.svg#icon-cross"></use>
       </svg>
+       </button>
       <div class="main-nav__list site-list">
         <a class="site-list__link" href="index.html">Главная</a>
         <a class="site-list__link" href="photo.html">Фото и видео</a>
@@ -41,11 +46,11 @@
         <legend class="form-contacts__title">Представьтесь:</legend>
         <div class="form-contacts__wrapper">
         <label class="form-contacts__label" for="name">Имя*:</label>
-        <input class="form-contacts__input form-contacts__input--name" type="text" id="name" placeholder="Петр" required>
+        <input class="form-contacts__input form-contacts__input--name" type="text" id="name" placeholder="Петр" required="">
         </div>
         <div class="form-contacts__wrapper">
         <label class="form-contacts__label" for="family-name">Фамилия*:</label>
-        <input class="form-contacts__input" type="text" id="family-name"  placeholder="Иванов" required>
+        <input class="form-contacts__input" type="text" id="family-name" placeholder="Иванов" required="">
         </div>
         <div class="form-contacts__wrapper">
         <label class="form-contacts__label form-contacts__label--family" for="father-name">Отчество:</label>
@@ -57,12 +62,12 @@
         <div class="form-contacts__wrapper-outside">
         <label class="form-contacts__label form-contacts__label--phone" for="phone"><span class=" form-contacts__label-phone">Контактный</span> телефон*:</label>
         <div class="form-contacts__wrapper">
-        <input class="form-contacts__input form-contacts__input--phone" type="text" id="phone" name="form-phone" placeholder="Введите телефон">
+        <input class="form-contacts__input form-contacts__input--phone" type="tel" id="phone" name="form-phone" placeholder="Введите телефон" pattern="[0-9]{1}+[0-9]{3}+[0-9]{2}+[0-9]{2}">
         <div class="form-contacts__icon form-contacts__icon--phone"></div>
         </div>
-        <label class="form-contacts__label form-contacts__label--email" for="email">Электронная почта*:</label>
+        <label class="form-contacts__label form-contacts__label--email" for="email">Электронная&nbsp;почта*:</label>
         <div class="form-contacts__wrapper">
-        <input class="form-contacts__input form-contacts__input--email" type="text" id="email" name="form-email" placeholder="Введите e-mail">
+        <input class="form-contacts__input form-contacts__input--email" type="email" id="email" name="form-email" placeholder="Введите e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
         <div class="form-contacts__icon form-contacts__icon--email"></div>
         </div>
         </div>
@@ -70,7 +75,7 @@
       <fieldset class="form-contacts__fieldset">
         <legend class="form-contacts__title">Ваше&nbsp;общее&nbsp;впечатление:</legend>
         <div class="form-contacts__wrapper">
-        <input class="form-contacts__input" type="radio" name="review__mark" id="positive" checked>
+        <input class="form-contacts__input" type="radio" name="review__mark" id="positive" checked="">
         <label class="form-contacts__label" for="positive">Скорее положительное</label>
         </div>
         <div class="form-contacts__wrapper">
@@ -86,15 +91,15 @@
         <legend class="form-contacts__title">Посещенные достопримечательности:</legend>
         <div class="form-contacts__wrapper-outside">
         <div class="form-contacts__wrapper">
-        <input class="form-contacts__input" type="checkbox" name="bridge" id="bridge" checked>
+        <input class="form-contacts__input" type="checkbox" name="bridge" id="bridge" checked="">
         <label class="form-contacts__label" for="bridge">Мост Дьявола</label>
         </div>
         <div class="form-contacts__wrapper">
-        <input class="form-contacts__input" type="checkbox" name="mountain" id="mountain" checked>
+        <input class="form-contacts__input" type="checkbox" name="mountain" id="mountain" checked="">
         <label class="form-contacts__label form-contacts__label--bell" for="mountain">Гора-Колокол</label>
         </div>
         <div class="form-contacts__wrapper">
-        <input class="form-contacts__input" type="checkbox" name="park" id="park" checked>
+        <input class="form-contacts__input" type="checkbox" name="park" id="park" checked="">
         <label class="form-contacts__label form-contacts__label--park" for="park">Слайд-парк</label>
         </div>
         <div class="form-contacts__wrapper">
@@ -115,26 +120,28 @@
   </main>
   <footer class="page-footer page-footer--form">
     <p class="page-footer__hashtag">#Visitsedona</p>
-    <ul class="page-footer__socials socials">
-      <li class="socials__item"><a href="#" aria-label="Твиттер">
-        <svg class="socials__item socials__item--twitter" width="18" height="14">
+      <ul class="page-footer__socials socials">
+      <li class="socials__item"><a href="#" class="socials__item socials__item--twitter" aria-label="Твиттер">
+        <svg width="18" height="14">
         <use xlink:href="img/sprite.svg#icon-twitter"></use>
       </svg>
       </a></li>
-      <li class="socials__item"><a href="#" aria-label="Фейсбук">
-        <svg class="socials__item socials__item--facebook" width="9" height="18">
+      <li class="socials__item"><a href="#" class="socials__item socials__item--facebook" aria-label="Фейсбук">
+        <svg width="9" height="18">
         <use xlink:href="img/sprite.svg#icon-facebook"></use>
       </svg>
       </a></li>
-      <li class="socials__item"><a href="#" aria-label="Инстаграм">
-        <svg class="socials__item socials__item--youtube" width="20" height="14">
+      <li class="socials__item"><a href="#" class="socials__item socials__item--youtube" aria-label="Инстаграм">
+        <svg width="20" height="14">
         <use xlink:href="img/sprite.svg#icon-youtube"></use>
       </svg>
       </a></li>
     </ul>
     <div class="page-footer__wrapper">
     <p class="page-footer__copyright">Разработано</p>
-    <svg class="page-footer__icon" viewBox="0 0 60 60" width="60px" height="60px"><use xlink:href="img/sprite.svg#icon-footer"></use></svg>
+    <a href="#" class="page-footer__icon" aria-label="лого htmlacademy">
+    <svg class="page-footer__icon" viewBox="0 0 60 60" width="27px" height="34px"><path fill="#000000" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+    </a>
     </div>
   </footer>
 
@@ -153,6 +160,8 @@
   </section>
   <script src="js/picturefill.js"></script>
   <script src="js/svgxuse.js"></script>
+  <script src="js/popup.js"></script>
+  <script src="js/mobilemenu.js"></script>
 </body>
 
 </html>

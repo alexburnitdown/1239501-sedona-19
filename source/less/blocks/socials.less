@@ -9,6 +9,7 @@
 }
 
 .socials__item {
+  display: block;
   width: 47px;
   height: 48px;
   margin-right: 6px;
@@ -33,14 +34,15 @@
   top: 50%;
   left: 0%;
   margin-left: 14px;
-  margin-top: -7px;
+  margin-top: -10px;
 }
 
 .socials__item--facebook {
   position: absolute;
   width: 9px;
   height: 18px;
-  margin-left: -5px;
+  left: 0%;
+  margin-left: 72px;
   margin-top: 15px;
 }
 
@@ -48,18 +50,14 @@
   position: absolute;
   width: 20px;
   height: 14px;
-  left: 0;
-  margin-left: 119px;
-  margin-top: 17px;
+  left: 50%;
+  margin-left: 2px;
+  margin-top: 13px;
 }
 
-
 .socials__item:active .socials__item--twitter,
-.socials__item:focus .socials__item--twitter,
 .socials__item:active .socials__item--facebook,
-.socials__item:focus .socials__item--facebook,
-.socials__item:active .socials__item--youtube,
-.socials__item:focus .socials__item--youtube, {
+.socials__item:active .socials__item--youtube {
   opacity: 0.3;
 }
 
@@ -67,6 +65,18 @@
   .socials {
     margin: 0px;
     margin-right: 110px;
+  }
+
+  .socials__item--facebook {
+    left: 50%;
+    margin-left: -8px;
+    margin-top: 15px;
+  }
+
+.socials__item--youtube {
+    left: 75%;
+    margin-left: 0px;
+    margin-top: 13px;
   }
 }
 
