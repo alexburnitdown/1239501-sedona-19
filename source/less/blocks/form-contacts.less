@@ -3,6 +3,10 @@
   padding-right: 20px;
 }
 
+.form-contacts__icon--email {
+    margin-top: -1px;
+}
+
 .form-contacts__wrapper {
   .container ();
 
@@ -21,6 +25,8 @@
   padding-bottom: 15px;
 
   border: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-contacts__title {
@@ -29,6 +35,9 @@
 
   font-weight: bold;
   font-size: 18px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .form-contacts__title::before {
@@ -87,8 +96,9 @@
 }
 
 .form-contacts__text {
+  margin: 0 auto;
   width: 280px;
-  height: 150px;
+  height: 160px;
   padding-top: 12px;
   padding-left: 10px;
   padding-right: 10px;
@@ -736,7 +746,7 @@ input[type="checkbox"]:checked:active + .form-contacts__label::after {
 
     width: 648px;
     height: 58px;
-    padding-top: 58px;
+    padding-top: 48px;
 
     order: 5;
   }
@@ -850,7 +860,8 @@ input[type="checkbox"]:checked:active + .form-contacts__label::after {
   }
 
   .form-contacts__fieldset:nth-child(3) .form-contacts__title {
-    padding-left: 30px;
+
+    margin-left: 70px;
   }
 
   .form-contacts__input {

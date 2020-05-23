@@ -377,35 +377,6 @@ img {
 .booking__button:disabled {
   background-color: #e5e5e5;
 }
-.booking__map {
-  margin: 0 auto;
-  position: relative;
-}
-.booking__map-image {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  width: 100vw;
-  height: 350px;
-  background-color: lightgrey;
-  vertical-align: bottom;
-  background-image: url("../img/bg-map-mobile@1x.jpg");
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .booking__map-image {
-    background-image: url("../img/bg-map-mobile@2x.jpg");
-  }
-}
-.booking__map::before {
-  content: "";
-  position: absolute;
-  width: 27px;
-  min-height: 27px;
-  left: 50%;
-  margin-top: 160px;
-  margin-left: -15px;
-  background-image: url(../img/icon-map-marker.svg);
-}
 @media (min-width: 768px) {
   .booking {
     width: 768px;
@@ -435,19 +406,6 @@ img {
     width: 438px;
     margin-bottom: 57px;
   }
-  .booking__map-image {
-    width: 768px;
-    height: 350px;
-    background-image: url("../img/bg-map-tablet@1x.jpg");
-  }
-  .booking__map::before {
-    margin-top: 165px;
-  }
-}
-@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
-  .booking__map-image {
-    background-image: url("../img/bg-map-tablet@2x.jpg");
-  }
 }
 @media (min-width: 1200px) {
   .booking {
@@ -465,18 +423,6 @@ img {
   .booking__button {
     margin-bottom: 65px;
   }
-  .booking__map-image {
-    width: 1200px;
-    background-image: url("../img/bg-map-desktop@1x.jpg");
-  }
-  .booking__map::before {
-    margin-top: 162px;
-  }
-}
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
-  .booking__map-image {
-    background-image: url("../img/bg-map-desktop@2x.jpg");
-  }
 }
 .features {
   margin: 0;
@@ -487,6 +433,9 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin: 0 auto;
+  width: 25px;
+  position: relative;
   padding-top: 5px;
   padding-bottom: 12px;
 }
@@ -542,14 +491,6 @@ img {
   background-color: black;
   margin-top: 11px;
   margin-left: 6px;
-}
-.features > .features__number::before {
-  margin-top: 10px;
-  margin-left: -20px;
-}
-.features > .features__number::after {
-  margin-top: 10px;
-  margin-left: 10px;
 }
 .features > .features__item:nth-child(1) .features__number::before,
 .features > .features__item:nth-child(2) .features__number::before,
@@ -922,6 +863,9 @@ img {
   padding-left: 20px;
   padding-right: 20px;
 }
+.form-contacts__icon--email {
+  margin-top: -1px;
+}
 .form-contacts__wrapper {
   margin: 0 auto;
   width: 280px;
@@ -940,12 +884,22 @@ img {
   margin: 0 auto;
   padding-bottom: 15px;
   border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .form-contacts__title {
   width: 250px;
   padding-bottom: 20px;
   font-weight: bold;
   font-size: 18px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .form-contacts__title::before {
   content: "";
@@ -995,8 +949,9 @@ img {
   background-color: #e6e6e6;
 }
 .form-contacts__text {
+  margin: 0 auto;
   width: 280px;
-  height: 150px;
+  height: 160px;
   padding-top: 12px;
   padding-left: 10px;
   padding-right: 10px;
@@ -1697,7 +1652,7 @@ input[type="checkbox"]:checked:active + .form-contacts__label::after {
             align-items: center;
     width: 648px;
     height: 58px;
-    padding-top: 58px;
+    padding-top: 48px;
     -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
             order: 5;
@@ -1792,7 +1747,7 @@ input[type="checkbox"]:checked:active + .form-contacts__label::after {
     margin: 0px;
   }
   .form-contacts__fieldset:nth-child(3) .form-contacts__title {
-    padding-left: 30px;
+    margin-left: 70px;
   }
   .form-contacts__input {
     width: 312px;
@@ -2577,13 +2532,12 @@ input[type="checkbox"]:checked:active + .form-contacts__label::after {
   top: 0%;
   left: 100%;
   margin-left: -37px;
-  margin-top: -10px;
+  margin-top: -5px;
 }
-.page-footer__icon:hover path {
+.page-footer__icon:hover svg path {
   fill: #81b3d2;
 }
-.page-footer__icon:active path,
-.page-footer__icon:focus path {
+.page-footer__icon:active svg path {
   fill: rgba(0, 0, 0, 0.3);
 }
 .page-footer--form {
@@ -2601,7 +2555,7 @@ input[type="checkbox"]:checked:active + .form-contacts__label::after {
         -ms-flex-align: center;
             align-items: center;
     width: 648px;
-    min-height: 120px;
+    height: 120px;
     padding-top: 0px;
     margin-top: 0px;
   }
@@ -2621,7 +2575,7 @@ input[type="checkbox"]:checked:active + .form-contacts__label::after {
     margin-left: 0px;
   }
   .page-footer__icon {
-    margin-left: -32px;
+    margin-left: -37px;
   }
 }
 @media (min-width: 1200px) {
@@ -2733,7 +2687,7 @@ input[type="checkbox"]:checked:active + .form-contacts__label::after {
   padding: 0;
   list-style: none;
   margin: 0 auto;
-  width: 255px;
+  width: 265px;
   margin-top: 40px;
   margin-bottom: 27px;
   font-size: 18px;
@@ -2789,7 +2743,7 @@ input[type="checkbox"]:checked:active + .form-contacts__label::after {
   .page-main__picture::after {
     content: "";
     position: absolute;
-    width: 768px;
+    width: 101%;
     height: 57px;
     top: 100%;
     left: 0%;
@@ -2948,7 +2902,7 @@ input[type="checkbox"]:checked:active + .form-contacts__label::after {
   padding: 0;
   list-style: none;
   margin: 0 auto;
-  width: 236px;
+  width: 246px;
   padding-bottom: 35px;
   font-size: 14px;
   line-height: 24px;
@@ -3594,6 +3548,68 @@ input[type="checkbox"]:checked:active + .form-contacts__label::after {
   .form-modal__button--success {
     width: 458px;
     font-size: 21px;
+  }
+}
+.map {
+  width: 100%;
+}
+.map__wrapper {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+.map__image {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  height: 350px;
+  background-color: lightgrey;
+  vertical-align: bottom;
+  background-image: url("../img/bg-map-mobile@1x.jpg");
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .map__image {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  }
+}
+.map__wrapper::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  min-height: 27px;
+  left: 50%;
+  margin-top: 160px;
+  margin-left: -15px;
+  background-image: url(../img/icon-map-marker.svg);
+}
+@media (min-width: 768px) {
+  .map__image {
+    width: 100%;
+    height: 350px;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+  }
+  .map__wrapper::before {
+    margin-top: 165px;
+  }
+}
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .map__image {
+    background-image: url("../img/bg-map-tablet@2x.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  .map__image {
+    width: 100%;
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+  }
+  .map__wrapper::before {
+    margin-top: 162px;
+  }
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+  .map__image {
+    background-image: url("../img/bg-map-desktop@2x.jpg");
   }
 }
 

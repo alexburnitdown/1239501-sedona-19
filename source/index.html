@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link href="pixel-glass/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -125,9 +124,11 @@
       <a href="booking.html" class="booking__button">Найти гостиницу</a>
       </div>
       </section>
-      <a href="#" class="booking__map" aria-label="Карта с расположением города Седона">
-        <iframe class="booking__map-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1674103.3326360947!2d-112.89474423477665!3d34.963298387899584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1589801813408!5m2!1sru!2sru" width="320" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <section class="map">
+      <a href="#" class="map__wrapper" aria-label="Карта с расположением города Седона">
+        <iframe class="map__image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1674103.3326360947!2d-112.89474423477665!3d34.963298387899584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1589801813408!5m2!1sru!2sru" width="320" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </a>
+      </section>
   </main>
   <footer class="page-footer">
     <p class="page-footer__hashtag">#Visitsedona</p>
@@ -151,7 +152,7 @@
     <div class="page-footer__wrapper">
     <p class="page-footer__copyright">Разработано</p>
     <a href="#" class="page-footer__icon" aria-label="лого htmlacademy">
-    <svg viewBox="0 0 60 60" width="40px" height="50px"><use xlink:href="img/sprite.svg#icon-htmlacademy"></use></svg>
+    <svg class="page-footer__icon" viewBox="0 0 60 60" width="27px" height="34px"><path fill="#000000" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
     </a>
     </div>
   </footer>
