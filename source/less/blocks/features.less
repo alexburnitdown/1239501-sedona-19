@@ -81,6 +81,22 @@
 .features>.features__item:nth-child(1) .features__title-wrapper {
   min-height: 210px;
   color: white;
+  position: relative;
+}
+
+.features>.features__item:nth-child(1) .features__title-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 37px;
+  top: 0%;
+  left: 50%;
+  margin-top: -22px;
+  margin-left: -160px;
+
+  background-image: url(../img/bg-triangle.svg);
+  background-repeat: no-repeat;
+
 }
 
 .features>.features__item:nth-child(1) .features__title {
@@ -262,6 +278,10 @@
     width: 162px;
     padding: 0px;
     padding-bottom: 5px;
+  }
+
+  .features>.features__item:nth-child(1) .features__title-wrapper::before {
+    .visually-hidden();
   }
 
   .features>.features__item:nth-child(1) .features__number {

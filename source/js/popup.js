@@ -11,7 +11,7 @@ form.addEventListener("submit", function(evt) {
     evt.preventDefault();
     popupError.classList.add("form-modal__show");
   } else {
-     evt.preventDefault();
+      evt.preventDefault();
     popupSuccess.classList.add("form-modal__show");
   }
 });

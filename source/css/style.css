@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -503,6 +517,19 @@ img {
 .features > .features__item:nth-child(1) .features__title-wrapper {
   min-height: 210px;
   color: white;
+  position: relative;
+}
+.features > .features__item:nth-child(1) .features__title-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 37px;
+  top: 0%;
+  left: 50%;
+  margin-top: -22px;
+  margin-left: -160px;
+  background-image: url(../img/bg-triangle.svg);
+  background-repeat: no-repeat;
 }
 .features > .features__item:nth-child(1) .features__title {
   margin: 0 auto;
@@ -663,6 +690,17 @@ img {
     width: 162px;
     padding: 0px;
     padding-bottom: 5px;
+  }
+  .features > .features__item:nth-child(1) .features__title-wrapper::before {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
   }
   .features > .features__item:nth-child(1) .features__number {
     padding-bottom: 15px;
@@ -2632,12 +2670,11 @@ input[type="checkbox"]:checked:active + .form-contacts__label::after {
 .page-main__picture::after {
   content: "";
   position: absolute;
-  width: 101%;
+  width: 100%;
   height: 26px;
   top: 100%;
   left: 0%;
   margin-top: -26px;
-  margin-left: -2px;
   background-image: url(../img/bg-intro-triangle-mobile.svg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -2837,7 +2874,7 @@ input[type="checkbox"]:checked:active + .form-contacts__label::after {
   .page-main__picture::after {
     content: "";
     position: absolute;
-    width: 1200px;
+    width: 100%;
     background-image: url(../img/bg-intro-triangle-desktop.svg);
   }
   .page-main__picture--photo {
